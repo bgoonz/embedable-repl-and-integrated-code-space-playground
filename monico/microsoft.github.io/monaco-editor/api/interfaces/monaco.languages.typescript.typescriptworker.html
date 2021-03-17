@@ -1,0 +1,961 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>TypeScriptWorker | Monaco Editor API</title>
+	<meta name="description" content="Documentation for Monaco Editor API">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="https://microsoft.github.io/monaco-editor/" class="title">Monaco Editor API</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../index.html">Monaco Editor API</a>
+				</li>
+				<li>
+					<a href="../modules/monaco.html">monaco</a>
+				</li>
+				<li>
+					<a href="../modules/monaco.languages.html">languages</a>
+				</li>
+				<li>
+					<a href="../modules/monaco.languages.typescript.html">typescript</a>
+				</li>
+				<li>
+					<a href="monaco.languages.typescript.typescriptworker.html">TypeScriptWorker</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">TypeScriptWorker</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#findrenamelocations" class="tsd-kind-icon">find<wbr>Rename<wbr>Locations</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#getcodefixesatposition" class="tsd-kind-icon">get<wbr>Code<wbr>Fixes<wbr>AtPosition</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#getcompileroptionsdiagnostics" class="tsd-kind-icon">get<wbr>Compiler<wbr>Options<wbr>Diagnostics</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#getcompletionentrydetails" class="tsd-kind-icon">get<wbr>Completion<wbr>Entry<wbr>Details</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#getcompletionsatposition" class="tsd-kind-icon">get<wbr>Completions<wbr>AtPosition</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#getdefinitionatposition" class="tsd-kind-icon">get<wbr>Definition<wbr>AtPosition</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#getemitoutput" class="tsd-kind-icon">get<wbr>Emit<wbr>Output</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#getformattingeditsafterkeystroke" class="tsd-kind-icon">get<wbr>Formatting<wbr>Edits<wbr>After<wbr>Keystroke</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#getformattingeditsfordocument" class="tsd-kind-icon">get<wbr>Formatting<wbr>Edits<wbr>For<wbr>Document</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#getformattingeditsforrange" class="tsd-kind-icon">get<wbr>Formatting<wbr>Edits<wbr>For<wbr>Range</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#getnavigationbaritems" class="tsd-kind-icon">get<wbr>Navigation<wbr>Bar<wbr>Items</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#getoccurrencesatposition" class="tsd-kind-icon">get<wbr>Occurrences<wbr>AtPosition</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#getquickinfoatposition" class="tsd-kind-icon">get<wbr>Quick<wbr>Info<wbr>AtPosition</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#getreferencesatposition" class="tsd-kind-icon">get<wbr>References<wbr>AtPosition</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#getrenameinfo" class="tsd-kind-icon">get<wbr>Rename<wbr>Info</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#getscripttext" class="tsd-kind-icon">get<wbr>Script<wbr>Text</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#getsemanticdiagnostics" class="tsd-kind-icon">get<wbr>Semantic<wbr>Diagnostics</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#getsignaturehelpitems" class="tsd-kind-icon">get<wbr>Signature<wbr>Help<wbr>Items</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#getsuggestiondiagnostics" class="tsd-kind-icon">get<wbr>Suggestion<wbr>Diagnostics</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.languages.typescript.typescriptworker.html#getsyntacticdiagnostics" class="tsd-kind-icon">get<wbr>Syntactic<wbr>Diagnostics</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="findrenamelocations" class="tsd-anchor"></a>
+					<h3>find<wbr>Rename<wbr>Locations</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Rename<wbr>Locations<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, positon<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, findInStrings<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, findInComments<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, providePrefixAndSuffixTextForRename<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L7049">monaco.d.ts:7049</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get other occurrences which should be updated when renaming the item at the given file and position.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>positon: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>findInStrings: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>findInComments: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>providePrefixAndSuffixTextForRename: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p><code>Promise&lt;readonly typescript.RenameLocation[] | undefined&gt;</code></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getcodefixesatposition" class="tsd-anchor"></a>
+					<h3>get<wbr>Code<wbr>Fixes<wbr>AtPosition</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Code<wbr>Fixes<wbr>AtPosition<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, errorCodes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, formatOptions<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L7072">monaco.d.ts:7072</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get possible code fixes at the given position in the file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>start: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>end: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>errorCodes: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>formatOptions: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p><code>typescript.FormatCodeOptions</code></p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p><code>Promise&lt;ReadonlyArray&lt;typescript.CodeFixAction&gt;&gt;</code></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getcompileroptionsdiagnostics" class="tsd-anchor"></a>
+					<h3>get<wbr>Compiler<wbr>Options<wbr>Diagnostics</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Compiler<wbr>Options<wbr>Diagnostics<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="monaco.languages.typescript.diagnostic.html" class="tsd-signature-type" data-tsd-kind="Interface">Diagnostic</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L6962">monaco.d.ts:6962</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get diagnostic messages related to the current compiler options.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Not used</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="monaco.languages.typescript.diagnostic.html" class="tsd-signature-type" data-tsd-kind="Interface">Diagnostic</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getcompletionentrydetails" class="tsd-anchor"></a>
+					<h3>get<wbr>Completion<wbr>Entry<wbr>Details</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Completion<wbr>Entry<wbr>Details<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, entry<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L6972">monaco.d.ts:6972</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get code completion details for the given file, position, and entry.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>position: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>entry: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p><code>Promise&lt;typescript.CompletionEntryDetails | undefined&gt;</code></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getcompletionsatposition" class="tsd-anchor"></a>
+					<h3>get<wbr>Completions<wbr>AtPosition</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Completions<wbr>AtPosition<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L6967">monaco.d.ts:6967</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get code completions for the given file and position.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>position: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p><code>Promise&lt;typescript.CompletionInfo | undefined&gt;</code></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getdefinitionatposition" class="tsd-anchor"></a>
+					<h3>get<wbr>Definition<wbr>AtPosition</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Definition<wbr>AtPosition<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L7003">monaco.d.ts:7003</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the definition of the item at the given position in the file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>position: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p><code>Promise&lt;ReadonlyArray&lt;typescript.DefinitionInfo&gt; | undefined&gt;</code></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getemitoutput" class="tsd-anchor"></a>
+					<h3>get<wbr>Emit<wbr>Output</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Emit<wbr>Output<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="monaco.languages.typescript.emitoutput.html" class="tsd-signature-type" data-tsd-kind="Interface">EmitOutput</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L7066">monaco.d.ts:7066</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get transpiled output for the given file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="monaco.languages.typescript.emitoutput.html" class="tsd-signature-type" data-tsd-kind="Interface">EmitOutput</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p><code>typescript.EmitOutput</code></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getformattingeditsafterkeystroke" class="tsd-anchor"></a>
+					<h3>get<wbr>Formatting<wbr>Edits<wbr>After<wbr>Keystroke</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Formatting<wbr>Edits<wbr>After<wbr>Keystroke<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, postion<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, ch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L7039">monaco.d.ts:7039</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get formatting changes which should be applied after the given keystroke.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>postion: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>ch: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>options: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p><code>typescript.FormatCodeOptions</code></p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p><code>Promise&lt;typescript.TextChange[]&gt;</code></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getformattingeditsfordocument" class="tsd-anchor"></a>
+					<h3>get<wbr>Formatting<wbr>Edits<wbr>For<wbr>Document</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Formatting<wbr>Edits<wbr>For<wbr>Document<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L7022">monaco.d.ts:7022</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get changes which should be applied to format the given file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>options: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p><code>typescript.FormatCodeOptions</code></p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p><code>Promise&lt;typescript.TextChange[]&gt;</code></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getformattingeditsforrange" class="tsd-anchor"></a>
+					<h3>get<wbr>Formatting<wbr>Edits<wbr>For<wbr>Range</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Formatting<wbr>Edits<wbr>For<wbr>Range<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L7028">monaco.d.ts:7028</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get changes which should be applied to format the given range in the file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>start: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>end: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>options: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p><code>typescript.FormatCodeOptions</code></p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p><code>Promise&lt;typescript.TextChange[]&gt;</code></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getnavigationbaritems" class="tsd-anchor"></a>
+					<h3>get<wbr>Navigation<wbr>Bar<wbr>Items</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Navigation<wbr>Bar<wbr>Items<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L7016">monaco.d.ts:7016</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get outline entries for the item at the given position in the file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p><code>Promise&lt;typescript.NavigationBarItem[]&gt;</code></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getoccurrencesatposition" class="tsd-anchor"></a>
+					<h3>get<wbr>Occurrences<wbr>AtPosition</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Occurrences<wbr>AtPosition<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L6995">monaco.d.ts:6995</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get other ranges which are related to the item at the given position in the file (often used for highlighting).</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>position: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p><code>Promise&lt;ReadonlyArray&lt;typescript.ReferenceEntry&gt; | undefined&gt;</code></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getquickinfoatposition" class="tsd-anchor"></a>
+					<h3>get<wbr>Quick<wbr>Info<wbr>AtPosition</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Quick<wbr>Info<wbr>AtPosition<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L6990">monaco.d.ts:6990</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get quick info for the item at the given position in the file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>position: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p><code>Promise&lt;typescript.QuickInfo | undefined&gt;</code></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getreferencesatposition" class="tsd-anchor"></a>
+					<h3>get<wbr>References<wbr>AtPosition</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>References<wbr>AtPosition<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L7011">monaco.d.ts:7011</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get references to the item at the given position in the file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>position: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p><code>Promise&lt;typescript.ReferenceEntry[] | undefined&gt;</code></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getrenameinfo" class="tsd-anchor"></a>
+					<h3>get<wbr>Rename<wbr>Info</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Rename<wbr>Info<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, positon<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L7061">monaco.d.ts:7061</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get edits which should be applied to rename the item at the given file and position (or a failure reason).</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>positon: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>options: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p><code>typescript.RenameInfoOptions</code></p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p><code>Promise&lt;typescript.RenameInfo&gt;</code></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getscripttext" class="tsd-anchor"></a>
+					<h3>get<wbr>Script<wbr>Text</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Script<wbr>Text<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L6957">monaco.d.ts:6957</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the content of a given file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getsemanticdiagnostics" class="tsd-anchor"></a>
+					<h3>get<wbr>Semantic<wbr>Diagnostics</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Semantic<wbr>Diagnostics<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="monaco.languages.typescript.diagnostic.html" class="tsd-signature-type" data-tsd-kind="Interface">Diagnostic</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L6949">monaco.d.ts:6949</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get diagnostic messages for any semantic issues in the given file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="monaco.languages.typescript.diagnostic.html" class="tsd-signature-type" data-tsd-kind="Interface">Diagnostic</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getsignaturehelpitems" class="tsd-anchor"></a>
+					<h3>get<wbr>Signature<wbr>Help<wbr>Items</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Signature<wbr>Help<wbr>Items<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L6981">monaco.d.ts:6981</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get signature help items for the item at the given file and position.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>position: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>options: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p><code>Promise&lt;typescript.SignatureHelpItems | undefined&gt;</code></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getsuggestiondiagnostics" class="tsd-anchor"></a>
+					<h3>get<wbr>Suggestion<wbr>Diagnostics</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Suggestion<wbr>Diagnostics<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="monaco.languages.typescript.diagnostic.html" class="tsd-signature-type" data-tsd-kind="Interface">Diagnostic</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L6953">monaco.d.ts:6953</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get diagnostic messages for any suggestions related to the given file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="monaco.languages.typescript.diagnostic.html" class="tsd-signature-type" data-tsd-kind="Interface">Diagnostic</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getsyntacticdiagnostics" class="tsd-anchor"></a>
+					<h3>get<wbr>Syntactic<wbr>Diagnostics</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Syntactic<wbr>Diagnostics<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="monaco.languages.typescript.diagnostic.html" class="tsd-signature-type" data-tsd-kind="Interface">Diagnostic</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L6945">monaco.d.ts:6945</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get diagnostic messages for any syntax issues in the given file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="monaco.languages.typescript.diagnostic.html" class="tsd-signature-type" data-tsd-kind="Interface">Diagnostic</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../index.html">Exports</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/monaco.html">monaco</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.editor.html">monaco.editor</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.html">monaco.languages</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.css.html">monaco.languages.css</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.html.html">monaco.languages.html</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.json.html">monaco.languages.json</a>
+					</li>
+					<li class="current tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.typescript.html">monaco.languages.typescript</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.worker.html">monaco.worker</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/monaco.languages.typescript.jsxemit.html" class="tsd-kind-icon">Jsx<wbr>Emit</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/monaco.languages.typescript.modulekind.html" class="tsd-kind-icon">Module<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/monaco.languages.typescript.moduleresolutionkind.html" class="tsd-kind-icon">Module<wbr>Resolution<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/monaco.languages.typescript.newlinekind.html" class="tsd-kind-icon">New<wbr>Line<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/monaco.languages.typescript.scripttarget.html" class="tsd-kind-icon">Script<wbr>Target</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="monaco.languages.typescript.compileroptions.html" class="tsd-kind-icon">Compiler<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="monaco.languages.typescript.diagnostic.html" class="tsd-kind-icon">Diagnostic</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="monaco.languages.typescript.diagnosticmessagechain.html" class="tsd-kind-icon">Diagnostic<wbr>Message<wbr>Chain</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="monaco.languages.typescript.diagnosticrelatedinformation.html" class="tsd-kind-icon">Diagnostic<wbr>Related<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="monaco.languages.typescript.diagnosticsoptions.html" class="tsd-kind-icon">Diagnostics<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="monaco.languages.typescript.emitoutput.html" class="tsd-kind-icon">Emit<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="monaco.languages.typescript.iextralib.html" class="tsd-kind-icon">IExtra<wbr>Lib</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="monaco.languages.typescript.iextralibs.html" class="tsd-kind-icon">IExtra<wbr>Libs</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="monaco.languages.typescript.languageservicedefaults.html" class="tsd-kind-icon">Language<wbr>Service<wbr>Defaults</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="monaco.languages.typescript.maplike.html" class="tsd-kind-icon">Map<wbr>Like</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="monaco.languages.typescript.outputfile.html" class="tsd-kind-icon">Output<wbr>File</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="monaco.languages.typescript.typescriptworker.html" class="tsd-kind-icon">Type<wbr>Script<wbr>Worker</a>
+						<ul>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#findrenamelocations" class="tsd-kind-icon">find<wbr>Rename<wbr>Locations</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#getcodefixesatposition" class="tsd-kind-icon">get<wbr>Code<wbr>Fixes<wbr>AtPosition</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#getcompileroptionsdiagnostics" class="tsd-kind-icon">get<wbr>Compiler<wbr>Options<wbr>Diagnostics</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#getcompletionentrydetails" class="tsd-kind-icon">get<wbr>Completion<wbr>Entry<wbr>Details</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#getcompletionsatposition" class="tsd-kind-icon">get<wbr>Completions<wbr>AtPosition</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#getdefinitionatposition" class="tsd-kind-icon">get<wbr>Definition<wbr>AtPosition</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#getemitoutput" class="tsd-kind-icon">get<wbr>Emit<wbr>Output</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#getformattingeditsafterkeystroke" class="tsd-kind-icon">get<wbr>Formatting<wbr>Edits<wbr>After<wbr>Keystroke</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#getformattingeditsfordocument" class="tsd-kind-icon">get<wbr>Formatting<wbr>Edits<wbr>For<wbr>Document</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#getformattingeditsforrange" class="tsd-kind-icon">get<wbr>Formatting<wbr>Edits<wbr>For<wbr>Range</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#getnavigationbaritems" class="tsd-kind-icon">get<wbr>Navigation<wbr>Bar<wbr>Items</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#getoccurrencesatposition" class="tsd-kind-icon">get<wbr>Occurrences<wbr>AtPosition</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#getquickinfoatposition" class="tsd-kind-icon">get<wbr>Quick<wbr>Info<wbr>AtPosition</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#getreferencesatposition" class="tsd-kind-icon">get<wbr>References<wbr>AtPosition</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#getrenameinfo" class="tsd-kind-icon">get<wbr>Rename<wbr>Info</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#getscripttext" class="tsd-kind-icon">get<wbr>Script<wbr>Text</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#getsemanticdiagnostics" class="tsd-kind-icon">get<wbr>Semantic<wbr>Diagnostics</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#getsignaturehelpitems" class="tsd-kind-icon">get<wbr>Signature<wbr>Help<wbr>Items</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#getsuggestiondiagnostics" class="tsd-kind-icon">get<wbr>Suggestion<wbr>Diagnostics</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.languages.typescript.typescriptworker.html#getsyntacticdiagnostics" class="tsd-kind-icon">get<wbr>Syntactic<wbr>Diagnostics</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="monaco.languages.typescript.workeroptions.html" class="tsd-kind-icon">Worker<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.typescript.html#compileroptionsvalue" class="tsd-kind-icon">Compiler<wbr>Options<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.typescript.html#javascriptdefaults" class="tsd-kind-icon">javascript<wbr>Defaults</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.typescript.html#typescriptdefaults" class="tsd-kind-icon">typescript<wbr>Defaults</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.typescript.html#typescriptversion" class="tsd-kind-icon">typescript<wbr>Version</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.typescript.html#getjavascriptworker" class="tsd-kind-icon">get<wbr>Java<wbr>Script<wbr>Worker</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.typescript.html#gettypescriptworker" class="tsd-kind-icon">get<wbr>Type<wbr>Script<wbr>Worker</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

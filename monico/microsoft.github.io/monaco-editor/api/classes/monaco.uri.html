@@ -1,0 +1,803 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Uri | Monaco Editor API</title>
+	<meta name="description" content="Documentation for Monaco Editor API">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="https://microsoft.github.io/monaco-editor/" class="title">Monaco Editor API</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../index.html">Monaco Editor API</a>
+				</li>
+				<li>
+					<a href="../modules/monaco.html">monaco</a>
+				</li>
+				<li>
+					<a href="monaco.uri.html">Uri</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Uniform Resource Identifier (Uri) <a href="http://tools.ietf.org/html/rfc3986">http://tools.ietf.org/html/rfc3986</a>.
+							This class is a simple parser which creates the basic component parts
+							(<a href="http://tools.ietf.org/html/rfc3986#section-3">http://tools.ietf.org/html/rfc3986#section-3</a>) with minimal validation
+						and encoding.</p>
+					</div>
+					<pre><code class="language-txt">      foo://example.com:8042/over/there?name=ferret#nose
+      \_/   \______________/\_________/ \_________/ \__/
+       |           |            |            |        |
+    scheme     authority       path        query   fragment
+       |   _____________________|__
+      / \ /                        \
+      urn:example:animal:ferret:nose
+</code></pre>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Uri</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/monaco.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="monaco.uri.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="monaco.uri.html#authority" class="tsd-kind-icon">authority</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="monaco.uri.html#fragment" class="tsd-kind-icon">fragment</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="monaco.uri.html#path" class="tsd-kind-icon">path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="monaco.uri.html#query" class="tsd-kind-icon">query</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="monaco.uri.html#scheme" class="tsd-kind-icon">scheme</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="monaco.uri.html#fspath" class="tsd-kind-icon">fs<wbr>Path</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="monaco.uri.html#tojson" class="tsd-kind-icon">toJSON</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="monaco.uri.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="monaco.uri.html#with" class="tsd-kind-icon">with</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="monaco.uri.html#file" class="tsd-kind-icon">file</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="monaco.uri.html#from" class="tsd-kind-icon">from</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="monaco.uri.html#isuri" class="tsd-kind-icon">is<wbr>Uri</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="monaco.uri.html#joinpath" class="tsd-kind-icon">join<wbr>Path</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="monaco.uri.html#parse" class="tsd-kind-icon">parse</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="monaco.uri.html#revive" class="tsd-kind-icon">revive</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Uri<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="authority" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> authority</h3>
+					<div class="tsd-signature tsd-kind-icon">authority<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/monaco.uricomponents.html">UriComponents</a>.<a href="../interfaces/monaco.uricomponents.html#authority">authority</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L104">monaco.d.ts:104</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>authority is the &#39;<a href="http://www.msft.com&#39;">www.msft.com&#39;</a> part of &#39;<a href="http://www.msft.com/some/path?query#fragment&#39;">http://www.msft.com/some/path?query#fragment&#39;</a>.
+							The part between the first double slashes and the next slash.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="fragment" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> fragment</h3>
+					<div class="tsd-signature tsd-kind-icon">fragment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/monaco.uricomponents.html">UriComponents</a>.<a href="../interfaces/monaco.uricomponents.html#fragment">fragment</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L116">monaco.d.ts:116</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>fragment is the &#39;fragment&#39; part of &#39;<a href="http://www.msft.com/some/path?query#fragment&#39;">http://www.msft.com/some/path?query#fragment&#39;</a>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="path" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> path</h3>
+					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/monaco.uricomponents.html">UriComponents</a>.<a href="../interfaces/monaco.uricomponents.html#path">path</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L108">monaco.d.ts:108</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>path is the &#39;/some/path&#39; part of &#39;<a href="http://www.msft.com/some/path?query#fragment&#39;">http://www.msft.com/some/path?query#fragment&#39;</a>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="query" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> query</h3>
+					<div class="tsd-signature tsd-kind-icon">query<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/monaco.uricomponents.html">UriComponents</a>.<a href="../interfaces/monaco.uricomponents.html#query">query</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L112">monaco.d.ts:112</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>query is the &#39;query&#39; part of &#39;<a href="http://www.msft.com/some/path?query#fragment&#39;">http://www.msft.com/some/path?query#fragment&#39;</a>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="scheme" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> scheme</h3>
+					<div class="tsd-signature tsd-kind-icon">scheme<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/monaco.uricomponents.html">UriComponents</a>.<a href="../interfaces/monaco.uricomponents.html#scheme">scheme</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L99">monaco.d.ts:99</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>scheme is the &#39;http&#39; part of &#39;<a href="http://www.msft.com/some/path?query#fragment&#39;">http://www.msft.com/some/path?query#fragment&#39;</a>.
+							The part before the first colon.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="fspath" class="tsd-anchor"></a>
+					<h3>fs<wbr>Path</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> fsPath<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L141">monaco.d.ts:141</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a string representing the corresponding file system path of this Uri.
+										Will handle UNC paths, normalizes windows drive letters to lower-case, and uses the
+									platform specific path separator.</p>
+								</div>
+								<ul>
+									<li>Will <em>not</em> validate the path for invalid characters and semantics.</li>
+									<li>Will <em>not</em> look at the scheme of this Uri.</li>
+									<li>The result shall <em>not</em> be used for display purposes but for accessing a file on disk.</li>
+								</ul>
+								<p>The <em>difference</em> to <code>Uri#path</code> is the use of the platform specific separator and the handling
+								of UNC paths. See the below sample of a file-uri with an authority (UNC path).</p>
+								<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">u</span><span style="color: #000000"> = </span><span style="color: #001080">Uri</span><span style="color: #000000">.</span><span style="color: #795E26">parse</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;file://server/c$/folder/file.txt&#039;</span><span style="color: #000000">)</span>
+<span style="color: #001080">u</span><span style="color: #000000">.</span><span style="color: #001080">authority</span><span style="color: #000000"> === </span><span style="color: #A31515">&#039;server&#039;</span>
+<span style="color: #001080">u</span><span style="color: #000000">.</span><span style="color: #001080">path</span><span style="color: #000000"> === </span><span style="color: #A31515">&#039;/shares/c$/file.txt&#039;</span>
+<span style="color: #001080">u</span><span style="color: #000000">.</span><span style="color: #001080">fsPath</span><span style="color: #000000"> === </span><span style="color: #A31515">&#039;</span><span style="color: #EE0000">\\</span><span style="color: #A31515">server</span><span style="color: #EE0000">\c</span><span style="color: #A31515">$</span><span style="color: #EE0000">\f</span><span style="color: #A31515">older</span><span style="color: #EE0000">\f</span><span style="color: #A31515">ile.txt&#039;</span>
+</code></pre>
+								<p>Using <code>Uri#path</code> to read a file (using fs-apis) would not be enough because parts of the path,
+									namely the server name, would be missing. Therefore <code>Uri#fsPath</code> exists - it&#39;s sugar to ease working
+								with URIs that represent files on disk (<code>file</code> scheme).</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tojson" class="tsd-anchor"></a>
+					<h3>toJSON</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">toJSON<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/monaco.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L205">monaco.d.ts:205</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/monaco.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tostring" class="tsd-anchor"></a>
+					<h3>to<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span>skipEncoding<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L204">monaco.d.ts:204</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a string representation for this Uri. It&#39;s guaranteed that calling
+										<code>Uri.parse</code> with the result of this function creates an Uri which is equal
+									to this Uri.</p>
+								</div>
+								<ul>
+									<li>The result shall <em>not</em> be used for display purposes but for externalization or transport.</li>
+									<li>The result will be encoded using the percentage encoding and encoding happens mostly
+									ignore the scheme-specific encoding rules.</li>
+								</ul>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> skipEncoding: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Do not encode the result, default is <code>false</code></p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="with" class="tsd-anchor"></a>
+					<h3>with</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">with<span class="tsd-signature-symbol">(</span>change<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>authority<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>fragment<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>query<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>scheme<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L142">monaco.d.ts:142</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>change: <span class="tsd-signature-symbol">{ </span>authority<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>fragment<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>query<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>scheme<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> authority<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> fragment<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> path<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> query<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> scheme<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="file" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> file</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L177">monaco.d.ts:177</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new Uri from a file system path, e.g. <code>c:\my\files</code>,
+									<code>/usr/home</code>, or <code>\\server\share\some\path</code>.</p>
+								</div>
+								<p>The <em>difference</em> between <code>Uri#parse</code> and <code>Uri#file</code> is that the latter treats the argument
+									as path, not as stringified-uri. E.g. <code>Uri.file(path)</code> is <strong>not the same as</strong>
+									<code>Uri.parse(&#39;file://&#39; + path)</code> because the path might contain characters that are
+								interpreted (# and ?). See the following sample:</p>
+								<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">good</span><span style="color: #000000"> = </span><span style="color: #001080">Uri</span><span style="color: #000000">.</span><span style="color: #795E26">file</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;/coding/c#/project1&#039;</span><span style="color: #000000">);</span>
+<span style="color: #001080">good</span><span style="color: #000000">.</span><span style="color: #001080">scheme</span><span style="color: #000000"> === </span><span style="color: #A31515">&#039;file&#039;</span><span style="color: #000000">;</span>
+<span style="color: #001080">good</span><span style="color: #000000">.</span><span style="color: #001080">path</span><span style="color: #000000"> === </span><span style="color: #A31515">&#039;/coding/c#/project1&#039;</span><span style="color: #000000">;</span>
+<span style="color: #001080">good</span><span style="color: #000000">.</span><span style="color: #001080">fragment</span><span style="color: #000000"> === </span><span style="color: #A31515">&#039;&#039;</span><span style="color: #000000">;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">bad</span><span style="color: #000000"> = </span><span style="color: #001080">Uri</span><span style="color: #000000">.</span><span style="color: #795E26">parse</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;file://&#039;</span><span style="color: #000000"> + </span><span style="color: #A31515">&#039;/coding/c#/project1&#039;</span><span style="color: #000000">);</span>
+<span style="color: #001080">bad</span><span style="color: #000000">.</span><span style="color: #001080">scheme</span><span style="color: #000000"> === </span><span style="color: #A31515">&#039;file&#039;</span><span style="color: #000000">;</span>
+<span style="color: #001080">bad</span><span style="color: #000000">.</span><span style="color: #001080">path</span><span style="color: #000000"> === </span><span style="color: #A31515">&#039;/coding/c&#039;</span><span style="color: #000000">; </span><span style="color: #008000">// path is now broken</span>
+<span style="color: #001080">bad</span><span style="color: #000000">.</span><span style="color: #001080">fragment</span><span style="color: #000000"> === </span><span style="color: #A31515">&#039;/project1&#039;</span><span style="color: #000000">;</span>
+</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A file system path (see <code>Uri#fsPath</code>)</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="from" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> from</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">(</span>components<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>authority<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>fragment<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>query<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>scheme<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L178">monaco.d.ts:178</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>components: <span class="tsd-signature-symbol">{ </span>authority<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>fragment<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>query<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>scheme<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> authority<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> fragment<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> path<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> query<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>scheme<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="isuri" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> is<wbr>Uri</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Uri<span class="tsd-signature-symbol">(</span>thing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">thing</span><span class="tsd-signature-symbol"> is </span><a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L94">monaco.d.ts:94</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>thing: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">thing</span><span class="tsd-signature-symbol"> is </span><a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="joinpath" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> join<wbr>Path</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">join<wbr>Path<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a>, <span class="tsd-signature-symbol">...</span>pathFragment<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L192">monaco.d.ts:192</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Join a Uri path with path fragments and normalizes the resulting path.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uri: <a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The input Uri.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>pathFragment: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The path fragment to add to the Uri path.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h4>
+							<p>The resulting Uri.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="parse" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> parse</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">parse<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, _strict<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L155">monaco.d.ts:155</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new Uri from a string, e.g. <code>http://www.msft.com/some/path</code>,
+									<code>file:///usr/home</code>, or <code>scheme:with/path</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A string which represents an Uri (see <code>Uri#toString</code>).</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> _strict: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="revive" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> revive</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">revive<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/monaco.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></li>
+						<li class="tsd-signature tsd-kind-icon">revive<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/monaco.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></li>
+						<li class="tsd-signature tsd-kind-icon">revive<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/monaco.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></li>
+						<li class="tsd-signature tsd-kind-icon">revive<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/monaco.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L206">monaco.d.ts:206</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/monaco.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L207">monaco.d.ts:207</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/monaco.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L208">monaco.d.ts:208</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/monaco.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L209">monaco.d.ts:209</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/monaco.uricomponents.html" class="tsd-signature-type" data-tsd-kind="Interface">UriComponents</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="monaco.uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../index.html">Exports</a>
+					</li>
+					<li class="current tsd-kind-namespace">
+						<a href="../modules/monaco.html">monaco</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.editor.html">monaco.editor</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.html">monaco.languages</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.css.html">monaco.languages.css</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.html.html">monaco.languages.html</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.json.html">monaco.languages.json</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.typescript.html">monaco.languages.typescript</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.worker.html">monaco.worker</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/monaco.keycode.html" class="tsd-kind-icon">Key<wbr>Code</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/monaco.markerseverity.html" class="tsd-kind-icon">Marker<wbr>Severity</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/monaco.markertag.html" class="tsd-kind-icon">Marker<wbr>Tag</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/monaco.selectiondirection.html" class="tsd-kind-icon">Selection<wbr>Direction</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="monaco.cancellationtokensource.html" class="tsd-kind-icon">Cancellation<wbr>Token<wbr>Source</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="monaco.emitter.html" class="tsd-kind-icon">Emitter</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="monaco.keymod.html" class="tsd-kind-icon">Key<wbr>Mod</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="monaco.position.html" class="tsd-kind-icon">Position</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="monaco.range.html" class="tsd-kind-icon">Range</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="monaco.selection.html" class="tsd-kind-icon">Selection</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="monaco.token.html" class="tsd-kind-icon">Token</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-namespace">
+						<a href="monaco.uri.html" class="tsd-kind-icon">Uri</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="monaco.uri.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="monaco.uri.html#authority" class="tsd-kind-icon">authority</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="monaco.uri.html#fragment" class="tsd-kind-icon">fragment</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="monaco.uri.html#path" class="tsd-kind-icon">path</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="monaco.uri.html#query" class="tsd-kind-icon">query</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="monaco.uri.html#scheme" class="tsd-kind-icon">scheme</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="monaco.uri.html#fspath" class="tsd-kind-icon">fs<wbr>Path</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="monaco.uri.html#tojson" class="tsd-kind-icon">toJSON</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="monaco.uri.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="monaco.uri.html#with" class="tsd-kind-icon">with</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="monaco.uri.html#file" class="tsd-kind-icon">file</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="monaco.uri.html#from" class="tsd-kind-icon">from</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="monaco.uri.html#isuri" class="tsd-kind-icon">is<wbr>Uri</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="monaco.uri.html#joinpath" class="tsd-kind-icon">join<wbr>Path</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="monaco.uri.html#parse" class="tsd-kind-icon">parse</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="monaco.uri.html#revive" class="tsd-kind-icon">revive</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/monaco.cancellationtoken.html" class="tsd-kind-icon">Cancellation<wbr>Token</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/monaco.environment.html" class="tsd-kind-icon">Environment</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/monaco.idisposable.html" class="tsd-kind-icon">IDisposable</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/monaco.ievent.html" class="tsd-kind-icon">IEvent</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/monaco.ikeyboardevent.html" class="tsd-kind-icon">IKeyboard<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/monaco.imarkdownstring.html" class="tsd-kind-icon">IMarkdown<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/monaco.imouseevent.html" class="tsd-kind-icon">IMouse<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/monaco.iposition.html" class="tsd-kind-icon">IPosition</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/monaco.irange.html" class="tsd-kind-icon">IRange</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/monaco.iscrollevent.html" class="tsd-kind-icon">IScroll<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/monaco.iselection.html" class="tsd-kind-icon">ISelection</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/monaco.uricomponents.html" class="tsd-kind-icon">Uri<wbr>Components</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../modules/monaco.html#thenable" class="tsd-kind-icon">Thenable</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

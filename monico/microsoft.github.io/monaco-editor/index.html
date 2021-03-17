@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Monaco Editor</title>
+
+	<style>/*!
+ * Bootstrap v2.3.0
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */footer,nav,section{display:block}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}a:active,a:hover{outline:0}img{height:auto;max-width:100%;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic}button,input,select{margin:0;font-size:100%;vertical-align:middle}button,input{line-height:normal}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}button{cursor:pointer;-webkit-appearance:button}button,input[type=checkbox],label,select{cursor:pointer}@media print{*{color:#000!important;text-shadow:none!important;background:0 0!important;box-shadow:none!important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}pre{border:1px solid #999;page-break-inside:avoid}img{page-break-inside:avoid}img{max-width:100%!important}@page{margin:.5cm}h3,p{orphans:3;widows:3}h3{page-break-after:avoid}}body{margin:0;line-height:20px;color:#555;background-color:#fff}a{color:#007fff;text-decoration:none}a:focus,a:hover{color:#06c;text-decoration:underline}.row{margin-left:-20px}.row:after,.row:before{display:table;line-height:0;content:""}.row:after{clear:both}[class*=span]{float:left;min-height:1px;margin-left:20px}.container,.navbar-fixed-top .container{width:940px}.span12{width:940px}.span9{width:700px}.span8{width:620px}.span4{width:300px}.span3{width:220px}.container{margin-right:auto;margin-left:auto}.container:after,.container:before{display:table;line-height:0;content:""}.container:after{clear:both}p{margin:0 0 10px}small{font-size:85%}strong{font-weight:700}.text-center{text-align:center}h3,h4{margin:10px 0;font-family:inherit;font-weight:300;line-height:20px;color:#080808;text-rendering:optimizelegibility}h3{line-height:40px}h3{font-size:24.5px}h4{font-size:17.5px}ul{padding:0;margin:0 0 10px 25px}li{line-height:20px}hr{margin:20px 0;border:0;border-top:1px solid #eee;border-bottom:1px solid #fff}pre{padding:0 3px 2px;font-family:Monaco,Menlo,Consolas,"Courier New",monospace;font-size:12px;color:#999;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:20px;word-break:break-all;word-wrap:break-word;white-space:pre;white-space:pre-wrap;background-color:#f5f5f5;border:1px solid #ccc;border:1px solid rgba(0,0,0,.15);-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}button,input,label,select{font-size:14px;font-weight:400;line-height:20px}button,input,select{font-family:"Open Sans",Calibri,Candara,Arial,sans-serif}label{display:block;margin-bottom:5px}select{display:inline-block;height:20px;padding:4px 6px;margin-bottom:10px;font-size:14px;line-height:20px;color:#bbb;vertical-align:middle;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}input{width:206px}input[type=checkbox]{margin:4px 0 0;line-height:normal}input[type=checkbox]{width:auto}select{height:30px;line-height:30px}select{width:220px;background-color:#fff;border:1px solid #bbb}input[type=checkbox]:focus,select:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}input:-moz-placeholder{color:#bbb}input:-ms-input-placeholder{color:#bbb}input::-webkit-input-placeholder{color:#bbb}.checkbox{min-height:20px;padding-left:20px}.checkbox input[type=checkbox]{float:left;margin-left:-20px}input{margin-left:0}input:focus:invalid,select:focus:invalid{color:#b94a48;border-color:#ee5f5b}input:focus:invalid:focus,select:focus:invalid:focus{border-color:#e9322d;-webkit-box-shadow:0 0 6px #f8b9b7;-moz-box-shadow:0 0 6px #f8b9b7;box-shadow:0 0 6px #f8b9b7}[class^=icon-]{display:inline-block;width:14px;height:14px;margin-top:1px;line-height:14px;vertical-align:text-top;background-image:url("../img/glyphicons-halflings.png");background-position:14px 14px;background-repeat:no-repeat}.collapse{position:relative;height:0;overflow:hidden;-webkit-transition:height .35s ease;-moz-transition:height .35s ease;-o-transition:height .35s ease;transition:height .35s ease}.btn{display:inline-block;padding:4px 12px;margin-bottom:0;font-size:14px;line-height:20px;color:#999;text-align:center;text-shadow:0 1px 1px rgba(255,255,255,.75);vertical-align:middle;cursor:pointer;background-color:#dfdfdf;background-image:-moz-linear-gradient(top,#eee,#c8c8c8);background-image:-webkit-gradient(linear,0 0,0 100%,from(#eee),to(#c8c8c8));background-image:-webkit-linear-gradient(top,#eee,#c8c8c8);background-image:-o-linear-gradient(top,#eee,#c8c8c8);background-image:linear-gradient(to bottom,#eee,#c8c8c8);background-repeat:repeat-x;border:1px solid #bbb;border-color:#c8c8c8 #c8c8c8 #a2a2a2;border-color:rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);border-bottom-color:#a2a2a2;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05)}.btn:active,.btn:focus,.btn:hover{color:#999;background-color:#c8c8c8}.btn:focus,.btn:hover{color:#999;text-decoration:none;background-position:0 -15px;-webkit-transition:background-position .1s linear;-moz-transition:background-position .1s linear;-o-transition:background-position .1s linear;transition:background-position .1s linear}.btn:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}.btn:active{background-image:none;outline:0;-webkit-box-shadow:inset 0 2px 4px rgba(0,0,0,.15),0 1px 2px rgba(0,0,0,.05);-moz-box-shadow:inset 0 2px 4px rgba(0,0,0,.15),0 1px 2px rgba(0,0,0,.05);box-shadow:inset 0 2px 4px rgba(0,0,0,.15),0 1px 2px rgba(0,0,0,.05)}button.btn::-moz-focus-inner{padding:0;border:0}.alert{padding:8px 35px 8px 14px;margin-bottom:20px;text-shadow:0 1px 0 rgba(255,255,255,.5);background-color:#ff7518;border:1px solid transparent;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.alert,.alert h4{color:#fff}.alert h4{margin:0}.alert .close{position:relative;top:-2px;right:-21px;line-height:20px}.alert-success{color:#fff;background-color:#3fb618;border-color:transparent}.alert-success h4{color:#fff}.alert-danger,.alert-error{color:#fff;background-color:#ff0039;border-color:transparent}.alert-danger h4,.alert-error h4{color:#fff}.alert-info{color:#fff;background-color:#9954bb;border-color:transparent}.alert-info h4{color:#fff}.alert-block{padding-top:14px;padding-bottom:14px}.alert-block>p,.alert-block>ul{margin-bottom:0}.alert-block p+p{margin-top:5px}.nav{margin-bottom:20px;margin-left:0;list-style:none}.nav>li>a{display:block}.nav>li>a:focus,.nav>li>a:hover{text-decoration:none;background-color:#eee}.navbar{margin-bottom:20px;overflow:visible}.navbar-inner{min-height:50px;padding-right:20px;padding-left:20px;background-color:#080808;background-image:-moz-linear-gradient(top,#080808,#080808);background-image:-webkit-gradient(linear,0 0,0 100%,from(#080808),to(#080808));background-image:-webkit-linear-gradient(top,#080808,#080808);background-image:-o-linear-gradient(top,#080808,#080808);background-image:linear-gradient(to bottom,#080808,#080808);background-repeat:repeat-x;border:1px solid transparent;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:0 1px 4px rgba(0,0,0,.065);-moz-box-shadow:0 1px 4px rgba(0,0,0,.065);box-shadow:0 1px 4px rgba(0,0,0,.065)}.navbar-inner:after,.navbar-inner:before{display:table;line-height:0;content:""}.navbar-inner:after{clear:both}.navbar .container{width:auto}.nav-collapse.collapse{height:auto;overflow:visible}.navbar .btn{margin-top:10px}.navbar-fixed-top{position:fixed;right:0;left:0;z-index:1030;margin-bottom:0}.navbar-fixed-top .navbar-inner{border-width:0 0 1px}.navbar-fixed-top .navbar-inner{padding-right:0;padding-left:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.navbar-fixed-top .container{width:940px}.navbar-fixed-top{top:0}.navbar-fixed-top .navbar-inner{-webkit-box-shadow:0 1px 10px rgba(0,0,0,.1);-moz-box-shadow:0 1px 10px rgba(0,0,0,.1);box-shadow:0 1px 10px rgba(0,0,0,.1)}.navbar .nav{position:relative;left:0;display:block;float:left;margin:0 10px 0 0}.navbar .nav>li{float:left}.navbar .nav>li>a{float:none;padding:15px 15px 15px;color:#fff;text-decoration:none;text-shadow:0 1px 0 #080808}.navbar .nav>li>a:focus,.navbar .nav>li>a:hover{color:#bbb;text-decoration:none;background-color:rgba(0,0,0,.05)}.navbar .btn-navbar{display:none;float:right;padding:7px 10px;margin-right:5px;margin-left:5px;color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,.25);background-color:#000;background-image:-moz-linear-gradient(top,#000,#000);background-image:-webkit-gradient(linear,0 0,0 100%,from(#000),to(#000));background-image:-webkit-linear-gradient(top,#000,#000);background-image:-o-linear-gradient(top,#000,#000);background-image:linear-gradient(to bottom,#000,#000);background-repeat:repeat-x;border-color:#000 #000 #000;border-color:rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.075);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.075);box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.075)}.navbar .btn-navbar:active,.navbar .btn-navbar:focus,.navbar .btn-navbar:hover{color:#fff;background-color:#000}.navbar .btn-navbar .icon-bar{display:block;width:18px;height:2px;background-color:#f5f5f5;-webkit-border-radius:1px;-moz-border-radius:1px;border-radius:1px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.25);-moz-box-shadow:0 1px 0 rgba(0,0,0,.25);box-shadow:0 1px 0 rgba(0,0,0,.25)}.btn-navbar .icon-bar+.icon-bar{margin-top:3px}.navbar-inverse .navbar-inner{background-color:#007fff;background-image:-moz-linear-gradient(top,#007fff,#007fff);background-image:-webkit-gradient(linear,0 0,0 100%,from(#007fff),to(#007fff));background-image:-webkit-linear-gradient(top,#007fff,#007fff);background-image:-o-linear-gradient(top,#007fff,#007fff);background-image:linear-gradient(to bottom,#007fff,#007fff);background-repeat:repeat-x;border-color:transparent}.navbar-inverse .nav>li>a{color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,.25)}.navbar-inverse .nav>li>a:focus,.navbar-inverse .nav>li>a:hover{color:#fff}.navbar-inverse .nav>li>a:focus,.navbar-inverse .nav>li>a:hover{color:#fff;background-color:rgba(0,0,0,.05)}.navbar-inverse .btn-navbar{color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,.25);background-color:#0072e6;background-image:-moz-linear-gradient(top,#0072e6,#0072e6);background-image:-webkit-gradient(linear,0 0,0 100%,from(#0072e6),to(#0072e6));background-image:-webkit-linear-gradient(top,#0072e6,#0072e6);background-image:-o-linear-gradient(top,#0072e6,#0072e6);background-image:linear-gradient(to bottom,#0072e6,#0072e6);background-repeat:repeat-x;border-color:#0072e6 #0072e6 #004c99;border-color:rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25)}.navbar-inverse .btn-navbar:active,.navbar-inverse .btn-navbar:focus,.navbar-inverse .btn-navbar:hover{color:#fff;background-color:#0072e6}@-webkit-keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}}@-moz-keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}}@-ms-keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}}@-o-keyframes progress-bar-stripes{from{background-position:0 0}to{background-position:40px 0}}@keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}}.progress{height:20px;margin-bottom:20px;overflow:hidden;background-color:#f7f7f7;background-image:-moz-linear-gradient(top,#f5f5f5,#f9f9f9);background-image:-webkit-gradient(linear,0 0,0 100%,from(#f5f5f5),to(#f9f9f9));background-image:-webkit-linear-gradient(top,#f5f5f5,#f9f9f9);background-image:-o-linear-gradient(top,#f5f5f5,#f9f9f9);background-image:linear-gradient(to bottom,#f5f5f5,#f9f9f9);background-repeat:repeat-x;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);box-shadow:inset 0 1px 2px rgba(0,0,0,.1)}.progress .bar{float:left;width:0;height:100%;font-size:12px;color:#fff;text-align:center;text-shadow:0 -1px 0 rgba(0,0,0,.25);background-color:#0e90d2;background-image:-moz-linear-gradient(top,#149bdf,#0480be);background-image:-webkit-gradient(linear,0 0,0 100%,from(#149bdf),to(#0480be));background-image:-webkit-linear-gradient(top,#149bdf,#0480be);background-image:-o-linear-gradient(top,#149bdf,#0480be);background-image:linear-gradient(to bottom,#149bdf,#0480be);background-repeat:repeat-x;-webkit-box-shadow:inset 0 -1px 0 rgba(0,0,0,.15);-moz-box-shadow:inset 0 -1px 0 rgba(0,0,0,.15);box-shadow:inset 0 -1px 0 rgba(0,0,0,.15);-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-transition:width .6s ease;-moz-transition:width .6s ease;-o-transition:width .6s ease;transition:width .6s ease}.progress-striped .bar{background-color:#149bdf;background-image:-webkit-gradient(linear,0 100%,100% 0,color-stop(.25,rgba(255,255,255,.15)),color-stop(.25,transparent),color-stop(.5,transparent),color-stop(.5,rgba(255,255,255,.15)),color-stop(.75,rgba(255,255,255,.15)),color-stop(.75,transparent),to(transparent));background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-moz-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);-webkit-background-size:40px 40px;-moz-background-size:40px 40px;-o-background-size:40px 40px;background-size:40px 40px}.progress.active .bar{-webkit-animation:progress-bar-stripes 2s linear infinite;-moz-animation:progress-bar-stripes 2s linear infinite;-ms-animation:progress-bar-stripes 2s linear infinite;-o-animation:progress-bar-stripes 2s linear infinite;animation:progress-bar-stripes 2s linear infinite}body{font-weight:300}h3{font-size:26px}h4{font-size:14px}.navbar .navbar-inner{background-image:none;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.navbar-inverse .nav>li>a{text-shadow:none}.btn{padding:5px 12px;text-shadow:none;background-image:none;border:none;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}select{color:#080808}.alert{text-shadow:none;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.alert h1,.alert h2,.alert h3,.alert h4,.alert h5,.alert h6,.alert-heading{color:#fff}[class^=icon-]{margin:0 2px;vertical-align:-2px}.progress{height:6px;background-color:#eee;background-image:none;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.progress .bar{background-color:#007fff}/*!
+ * Bootstrap Responsive v2.3.0
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */@-ms-viewport{width:device-width}@media(min-width:1200px){.row{margin-left:-30px}.row:after,.row:before{display:table;line-height:0;content:""}.row:after{clear:both}[class*=span]{float:left;min-height:1px;margin-left:30px}.container,.navbar-fixed-top .container{width:1170px}.span12{width:1170px}.span9{width:870px}.span8{width:770px}.span4{width:370px}.span3{width:270px}input{margin-left:0}}@media(min-width:768px) and (max-width:979px){.row{margin-left:-20px}.row:after,.row:before{display:table;line-height:0;content:""}.row:after{clear:both}[class*=span]{float:left;min-height:1px;margin-left:20px}.container,.navbar-fixed-top .container{width:724px}.span12{width:724px}.span9{width:538px}.span8{width:476px}.span4{width:228px}.span3{width:166px}input{margin-left:0}}@media(max-width:767px){body{padding-right:20px;padding-left:20px}.navbar-fixed-top{margin-right:-20px;margin-left:-20px}.container{width:auto}.row{margin-left:0}[class*=span]{display:block;float:none;width:100%;margin-left:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.span12{width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}}@media(max-width:480px){.nav-collapse{-webkit-transform:translate3d(0,0,0)}input[type=checkbox]{border:1px solid #ccc}}@media(max-width:979px){body{padding-top:0}.navbar-fixed-top{position:static}.navbar-fixed-top{margin-bottom:20px}.navbar-fixed-top .navbar-inner{padding:5px}.navbar .container{width:auto;padding:0}.nav-collapse{clear:both}.nav-collapse .nav{float:none;margin:0 0 10px}.nav-collapse .nav>li{float:none}.nav-collapse .nav>li>a{margin-bottom:2px}.nav-collapse .nav>li>a{padding:9px 15px;font-weight:700;color:#777;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}.nav-collapse .nav>li>a:focus,.nav-collapse .nav>li>a:hover{background-color:#f2f2f2}.navbar-inverse .nav-collapse .nav>li>a{color:#999}.navbar-inverse .nav-collapse .nav>li>a:focus,.navbar-inverse .nav-collapse .nav>li>a:hover{background-color:#111}.nav-collapse,.nav-collapse.collapse{height:0;overflow:hidden}.navbar .btn-navbar{display:block}}@media(min-width:980px){.nav-collapse.collapse{height:auto!important;overflow:visible!important}}body{padding:54px 0 40px 0;overflow-y:scroll}body,button,input,select{font:400 14px/1.4em "Segoe UI","Open Sans",Calibri,Candara,Arial,sans-serif}.navbar .nav{float:left;margin-right:0}a{color:#06c;cursor:pointer}h3,h4{letter-spacing:-.01em;margin:0;line-height:normal}h3{font-size:26px}h4{font-size:16px}.alert h1,.alert h2,.alert h3,.alert h4,.alert h5,.alert h6,.alert-heading{color:inherit}.alert-info{color:#3a87ad;background-color:#d9edf7}.navbar-inverse .navbar-inner{background-color:#68217a;-webkit-filter:none;filter:none}.navbar-inverse .btn-navbar{background:0 0;margin-top:14px}.navbar-inverse .btn-navbar:active,.navbar-inverse .btn-navbar:focus,.navbar-inverse .btn-navbar:hover{background:#442359}body>section>.container{padding-top:12px}.navbar .nav>li>a{text-shadow:none;padding-top:18px;font-size:14px;text-transform:uppercase}.navbar-inverse .nav-collapse .nav>li>a{color:#fff;padding-left:0}.navbar-inverse .nav>li>a.nav-item:focus,.navbar-inverse .nav>li>a.nav-item:hover{background-color:rgba(0,0,0,.12)}.navbar .logo{padding:16px 12px 0 0;height:35px;display:block;float:left}.navbar .logo a{color:#fff;font-size:24px;letter-spacing:-1px}.navbar-fixed-top{z-index:500}#gh-link{display:none;position:fixed;top:0;right:0;border:0;margin:0;z-index:1000}@media (min-width:980px){#gh-link{display:block}}@media (min-width:980px){.navbar .nav{float:right}.navbar-inverse .nav-collapse .nav>li>a{padding-left:15px}}@media (max-width:979px){body{padding:inherit}.navbar-fixed-top{margin-right:inherit;margin-left:inherit;margin-bottom:0}.navbar-fixed-top .navbar-inner{padding:0 20px}.navbar .container{width:724px}}@media (max-width:767px){.navbar .container{width:100%}}@media (max-width:480px){.navbar .logo a{display:none}}.try .editor.row{padding:18px 0}.try .row h4{padding-bottom:6px}.try .editor.row .control-label{display:inline-block;position:relative;top:-4px;margin-right:4px}.try .editor .editor-frame{position:relative}.try .editor .editor-frame #diff-editor,.try .editor .editor-frame #editor{height:400px;margin-bottom:10px;border:1px solid #eee}.try .editor .editor-frame .loading{position:absolute;height:100%;width:100%;background-color:rgba(255,255,255,.5);margin:0 auto;display:none;z-index:100}.try .editor .editor-frame .progress{width:50%;margin:15% auto 0}.try .editor .editor-frame .progress .bar{width:100%;background-color:#4bb1cf}.try .editor .editor-frame #diff-editor .alert,.try .editor .editor-frame #editor .alert{margin:18% auto 0;width:30%;text-align:center;color:#b94a48;background-color:#f2dede;border-color:#eed3d7}@media (min-width:1200px){.try .editor .row{margin-left:0}}@media (max-width:767px){.try .container{margin:0 24px}.try .editor>.span9 .row .span4{float:left;width:50%}.try .editor h4{margin-top:0}}@media (max-width:520px){.try .editor>.span3 h4,.try .editor>.span3 p{display:none}}@media (max-width:320px){.try .editor>.span9{display:none}}</style>
+	
+	
+	
+
+	<link data-name="vs/editor/editor.main" rel="stylesheet" href="node_modules/monaco-editor/min/vs/editor/editor.main.css">
+</head>
+
+<body>
+	<pre data-preload="index/samples/sample.typescript.txt" style="display:none">/* Game of Life
+ * Implemented in TypeScript
+ * To learn more about TypeScript, please visit http://www.typescriptlang.org/
+ */
+
+namespace Conway {
+
+	export class Cell {
+		public row: number;
+		public col: number;
+		public live: boolean;
+
+		constructor(row: number, col: number, live: boolean) {
+			this.row = row;
+			this.col = col;
+			this.live = live;
+		}
+	}
+
+	export class GameOfLife {
+		private gridSize: number;
+		private canvasSize: number;
+		private lineColor: string;
+		private liveColor: string;
+		private deadColor: string;
+		private initialLifeProbability: number;
+		private animationRate: number;
+		private cellSize: number;
+		private context: CanvasRenderingContext2D;
+		private world;
+
+
+		constructor() {
+			this.gridSize = 50;
+			this.canvasSize = 600;
+			this.lineColor = '#cdcdcd';
+			this.liveColor = '#666';
+			this.deadColor = '#eee';
+			this.initialLifeProbability = 0.5;
+			this.animationRate = 60;
+			this.cellSize = 0;
+			this.world = this.createWorld();
+			this.circleOfLife();
+		}
+
+		public createWorld() {
+			return this.travelWorld( (cell : Cell) =&gt;  {
+				cell.live = Math.random() &lt; this.initialLifeProbability;
+				return cell;
+			});
+		}
+
+		public circleOfLife() : void {
+			this.world = this.travelWorld( (cell: Cell) =&gt; {
+				cell = this.world[cell.row][cell.col];
+				this.draw(cell);
+				return this.resolveNextGeneration(cell);
+			});
+			setTimeout( () =&gt; {this.circleOfLife()}, this.animationRate);
+		}
+
+		public resolveNextGeneration(cell : Cell) {
+			var count = this.countNeighbors(cell);
+			var newCell = new Cell(cell.row, cell.col, cell.live);
+			if(count &lt; 2 || count &gt; 3) newCell.live = false;
+			else if(count == 3) newCell.live = true;
+			return newCell;
+		}
+
+		public countNeighbors(cell : Cell) {
+			var neighbors = 0;
+			for(var row = -1; row &lt;=1; row++) {
+				for(var col = -1; col &lt;= 1; col++) {
+					if(row == 0 &amp;&amp; col == 0) continue;
+					if(this.isAlive(cell.row + row, cell.col + col)) {
+						neighbors++;
+					}
+				}
+			}
+			return neighbors;
+		}
+
+		public isAlive(row : number, col : number) {
+			if(row &lt; 0 || col &lt; 0 || row &gt;= this.gridSize || col &gt;= this.gridSize) return false;
+			return this.world[row][col].live;
+		}
+
+		public travelWorld(callback) {
+			var result = [];
+			for(var row = 0; row &lt; this.gridSize; row++) {
+				var rowData = [];
+				for(var col = 0; col &lt; this.gridSize; col++) {
+					rowData.push(callback(new Cell(row, col, false)));
+				}
+				result.push(rowData);
+			}
+			return result;
+		}
+
+		public draw(cell : Cell) {
+			if(this.context == null) this.context = this.createDrawingContext();
+			if(this.cellSize == 0) this.cellSize = this.canvasSize/this.gridSize;
+
+			this.context.strokeStyle = this.lineColor;
+			this.context.strokeRect(cell.row * this.cellSize, cell.col*this.cellSize, this.cellSize, this.cellSize);
+			this.context.fillStyle = cell.live ? this.liveColor : this.deadColor;
+			this.context.fillRect(cell.row * this.cellSize, cell.col*this.cellSize, this.cellSize, this.cellSize);
+		}
+
+		public createDrawingContext() {
+			var canvas = &lt;HTMLCanvasElement&gt; document.getElementById('conway-canvas');
+			if(canvas == null) {
+					canvas = document.createElement('canvas');
+					canvas.id = 'conway-canvas';
+					canvas.width = this.canvasSize;
+					canvas.height = this.canvasSize;
+					document.body.appendChild(canvas);
+			}
+			return canvas.getContext('2d');
+		}
+	}
+}
+
+var game = new Conway.GameOfLife();
+</pre>
+	<pre data-preload="index/samples/diff.lhs.txt" style="display:none">
+/*
+  © Microsoft. All rights reserved.
+
+  This library is supported for use in Windows Tailored Apps only.
+
+  Build: 6.2.8100.0 
+  Version: 0.5 
+*/
+
+(function (global, undefined) {
+	"use strict";
+	undefinedVariable = {};
+	undefinedVariable.prop = 5;
+
+	function initializeProperties(target, members) {
+		var keys = Object.keys(members);
+		var properties;
+		var i, len;
+		for (i = 0, len = keys.length; i &lt; len; i++) {
+			var key = keys[i];
+			var enumerable = key.charCodeAt(0) !== /*_*/95;
+			var member = members[key];
+			if (member &amp;&amp; typeof member === 'object') {
+				if (member.value !== undefined || typeof member.get === 'function' || typeof member.set === 'function') {
+					if (member.enumerable === undefined) {
+						member.enumerable = enumerable;
+					}
+					properties = properties || {};
+					properties[key] = member;
+					continue;
+				} 
+			}
+			// These next lines will be deleted
+			if (!enumerable) {
+				properties = properties || {};
+				properties[key] = { value: member, enumerable: enumerable, configurable: true, writable: true }
+				continue;
+			}
+			target[key] = member;
+		}
+		if (properties) {
+			Object.defineProperties(target, properties);
+		}
+	}
+
+	(function (rootNamespace) {
+
+		// Create the rootNamespace in the global namespace
+		if (!global[rootNamespace]) {
+			global[rootNamespace] = Object.create(Object.prototype);
+		}
+
+		// Cache the rootNamespace we just created in a local variable
+		var _rootNamespace = global[rootNamespace];
+		if (!_rootNamespace.Namespace) {
+			_rootNamespace.Namespace = Object.create(Object.prototype);
+		}
+
+		function defineWithParent(parentNamespace, name, members) {
+			/// &lt;summary locid="1"&gt;
+			/// Defines a new namespace with the specified name, under the specified parent namespace.
+			/// &lt;/summary&gt;
+			/// &lt;param name="parentNamespace" type="Object" locid="2"&gt;
+			/// The parent namespace which will contain the new namespace.
+			/// &lt;/param&gt;
+			/// &lt;param name="name" type="String" locid="3"&gt;
+			/// Name of the new namespace.
+			/// &lt;/param&gt;
+			/// &lt;param name="members" type="Object" locid="4"&gt;
+			/// Members in the new namespace.
+			/// &lt;/param&gt;
+			/// &lt;returns locid="5"&gt;
+			/// The newly defined namespace.
+			/// &lt;/returns&gt;
+			var currentNamespace = parentNamespace,
+				namespaceFragments = name.split(".");
+
+			for (var i = 0, len = namespaceFragments.length; i &lt; len; i++) {
+				var namespaceName = namespaceFragments[i];
+				if (!currentNamespace[namespaceName]) {
+					Object.defineProperty(currentNamespace, namespaceName, 
+						{ value: {}, writable: false, enumerable: true, configurable: true }
+					);
+				}
+				currentNamespace = currentNamespace[namespaceName];
+			}
+
+			if (members) {
+				initializeProperties(currentNamespace, members);
+			}
+
+			return currentNamespace;
+		}
+
+		function define(name, members) {
+			/// &lt;summary locid="6"&gt;
+			/// Defines a new namespace with the specified name.
+			/// &lt;/summary&gt;
+			/// &lt;param name="name" type="String" locid="7"&gt;
+			/// Name of the namespace.  This could be a dot-separated nested name.
+			/// &lt;/param&gt;
+			/// &lt;param name="members" type="Object" locid="4"&gt;
+			/// Members in the new namespace.
+			/// &lt;/param&gt;
+			/// &lt;returns locid="5"&gt;
+			/// The newly defined namespace.
+			/// &lt;/returns&gt;
+			return defineWithParent(global, name, members);
+		}
+
+		// Establish members of the "WinJS.Namespace" namespace
+		Object.defineProperties(_rootNamespace.Namespace, {
+
+			defineWithParent: { value: defineWithParent, writable: true, enumerable: true },
+
+			define: { value: define, writable: true, enumerable: true }
+
+		});
+
+	})("WinJS");
+
+	(function (WinJS) {
+
+		function define(constructor, instanceMembers, staticMembers) {
+			/// &lt;summary locid="8"&gt;
+			/// Defines a class using the given constructor and with the specified instance members.
+			/// &lt;/summary&gt;
+			/// &lt;param name="constructor" type="Function" locid="9"&gt;
+			/// A constructor function that will be used to instantiate this class.
+			/// &lt;/param&gt;
+			/// &lt;param name="instanceMembers" type="Object" locid="10"&gt;
+			/// The set of instance fields, properties and methods to be made available on the class.
+			/// &lt;/param&gt;
+			/// &lt;param name="staticMembers" type="Object" locid="11"&gt;
+			/// The set of static fields, properties and methods to be made available on the class.
+			/// &lt;/param&gt;
+			/// &lt;returns type="Function" locid="12"&gt;
+			/// The newly defined class.
+			/// &lt;/returns&gt;
+			constructor = constructor || function () { };
+			if (instanceMembers) {
+				initializeProperties(constructor.prototype, instanceMembers);
+			}
+			if (staticMembers) {
+				initializeProperties(constructor, staticMembers);
+			}
+			return constructor;
+		}
+
+		function derive(baseClass, constructor, instanceMembers, staticMembers) {
+			/// &lt;summary locid="13"&gt;
+			/// Uses prototypal inheritance to create a sub-class based on the supplied baseClass parameter.
+			/// &lt;/summary&gt;
+			/// &lt;param name="baseClass" type="Function" locid="14"&gt;
+			/// The class to inherit from.
+			/// &lt;/param&gt;
+			/// &lt;param name="constructor" type="Function" locid="9"&gt;
+			/// A constructor function that will be used to instantiate this class.
+			/// &lt;/param&gt;
+			/// &lt;param name="instanceMembers" type="Object" locid="10"&gt;
+			/// The set of instance fields, properties and methods to be made available on the class.
+			/// &lt;/param&gt;
+			/// &lt;param name="staticMembers" type="Object" locid="11"&gt;
+			/// The set of static fields, properties and methods to be made available on the class.
+			/// &lt;/param&gt;
+			/// &lt;returns type="Function" locid="12"&gt;
+			/// The newly defined class.
+			/// &lt;/returns&gt;
+			if (baseClass) {
+				constructor = constructor || function () { };
+				var basePrototype = baseClass.prototype;
+				constructor.prototype = Object.create(basePrototype);
+				Object.defineProperty(constructor.prototype, "_super", { value: basePrototype });
+				Object.defineProperty(constructor.prototype, "constructor", { value: constructor });
+				if (instanceMembers) {
+					initializeProperties(constructor.prototype, instanceMembers);
+				}
+				if (staticMembers) {
+					initializeProperties(constructor, staticMembers);
+				}
+				return constructor;
+			} else {
+				return define(constructor, instanceMembers, staticMembers);
+			}
+		}
+
+		function mix(constructor) {
+			/// &lt;summary locid="15"&gt;
+			/// Defines a class using the given constructor and the union of the set of instance members
+			/// specified by all the mixin objects.  The mixin parameter list can be of variable length.
+			/// &lt;/summary&gt;
+			/// &lt;param name="constructor" locid="9"&gt;
+			/// A constructor function that will be used to instantiate this class.
+			/// &lt;/param&gt;
+			/// &lt;returns locid="12"&gt;
+			/// The newly defined class.
+			/// &lt;/returns&gt;
+			constructor = constructor || function () { };
+			var i, len;
+			for (i = 0, len = arguments.length; i &lt; len; i++) {
+				initializeProperties(constructor.prototype, arguments[i]);
+			}
+			return constructor;
+		}
+
+		// Establish members of "WinJS.Class" namespace
+		WinJS.Namespace.define("WinJS.Class", {
+			define: define,
+			derive: derive,
+			mix: mix
+		});
+
+	})(WinJS);
+
+})(this);</pre>
+	<pre data-preload="index/samples/diff.rhs.txt" style="display:none">
+/*
+  © Microsoft. All rights reserved.
+
+  This library is supported for use in Windows Tailored Apps only.
+
+  Build: 6.2.8100.0 
+  Version: 0.5 
+*/
+
+// Here are some inserted lines
+// with some extra comments
+	
+(function (global, undefined) {
+	"use strict";
+	var definedVariable = {};
+	definedVariable.prop = 5;
+
+	function initializeProperties(target, members) {
+		var keys = Object.keys(members);
+		var properties;
+		var i, len;
+		for (i = 0, len = keys.length; i &lt; len; i++) {
+			var key = keys[i];
+			var enumerable = key.charCodeAt(0) !== /*_*/95;
+			var member = members[key];
+			if (member &amp;&amp; typeof member === 'object') {
+				if (member.value !== undefined || typeof member.get === 'function' || typeof member.set === 'function') {
+					if (member.enumerable === undefined) {
+						member.enumerable = enumerable;
+					}
+					properties = properties || {};
+					properties[key] = member;
+					continue;
+				} 
+			}
+			target[key] = member;
+		}
+		if (properties) {
+			Object.defineProperties(target, properties);
+		}
+	}
+
+	(function (rootNamespace) {
+
+		// Create the rootNamespace in the global namespace
+		if (!global[rootNamespace]) {
+			global[rootNamespace] = Object.create(Object.prototype);
+		}
+
+		// Cache the rootNamespace we just created in a local variable
+		var _rootNamespace = global[rootNamespace];
+		if (!_rootNamespace.Namespace) {
+			_rootNamespace.Namespace = Object.create(Object.prototype);
+		}
+
+		function defineWithParent(parentNamespace, name, members) {
+			/// &lt;summary locid="1"&gt;
+			/// Defines a new namespace with the specified name, under the specified parent namespace.
+			/// &lt;/summary&gt;
+			/// &lt;param name="parentNamespace" type="Object" locid="2"&gt;
+			/// The parent namespace which will contain the new namespace.
+			/// &lt;/param&gt;
+			/// &lt;param name="name" type="String" locid="3"&gt;
+			/// Name of the new namespace.
+			/// &lt;/param&gt;
+			/// &lt;param name="members" type="Object" locid="4"&gt;
+			/// Members in the new namespace.
+			/// &lt;/param&gt;
+			/// &lt;returns locid="5"&gt;
+			/// The newly defined namespace.
+			/// &lt;/returns&gt;
+			var currentNamespace = parentNamespace,
+				namespaceFragments = name.split(".");
+
+			for (var i = 0, len = namespaceFragments.length; i &lt; len; i++) {
+				var namespaceName = namespaceFragments[i];
+				if (!currentNamespace[namespaceName]) {
+					Object.defineProperty(currentNamespace, namespaceName, 
+						{ value: {}, writable: false, enumerable: true, configurable: true }
+					);
+				}
+				currentNamespace = currentNamespace[namespaceName];
+			}
+
+			if (members) {
+				initializeProperties(currentNamespace, members);
+			}
+
+			return currentNamespace;
+		}
+
+		function define(name, members) {
+			/// &lt;summary locid="6"&gt;
+			/// Defines a new namespace with the specified name.
+			/// &lt;/summary&gt;
+			/// &lt;param name="name" type="String" locid="7"&gt;
+			/// Name of the namespace.  This could be a dot-separated nested name.
+			/// &lt;/param&gt;
+			/// &lt;param name="members" type="Object" locid="4"&gt;
+			/// Members in the new namespace.
+			/// &lt;/param&gt;
+			/// &lt;returns locid="5"&gt;
+			/// The newly defined namespace.
+			/// &lt;/returns&gt;
+			return defineWithParent(global, name, members);
+		}
+
+		// Establish members of the "WinJS.Namespace" namespace
+		Object.defineProperties(_rootNamespace.Namespace, {
+
+			defineWithParent: { value: defineWithParent, writable: true, enumerable: true },
+
+			define: { value: define, writable: true, enumerable: true }
+
+		});
+
+	})("WinJS");
+
+	(function (WinJS) {
+
+		function define(constructor, instanceMembers, staticMembers) {
+			/// &lt;summary locid="8"&gt;
+			/// Defines a class using the given constructor and with the specified instance members.
+			/// &lt;/summary&gt;
+			/// &lt;param name="constructor" type="Function" locid="9"&gt;
+			/// A constructor function that will be used to instantiate this class.
+			/// &lt;/param&gt;
+			/// &lt;param name="instanceMembers" type="Object" locid="10"&gt;
+			/// The set of instance fields, properties and methods to be made available on the class.
+			/// &lt;/param&gt;
+			/// &lt;param name="staticMembers" type="Object" locid="11"&gt;
+			/// The set of static fields, properties and methods to be made available on the class.
+			/// &lt;/param&gt;
+			/// &lt;returns type="Function" locid="12"&gt;
+			/// The newly defined class.
+			/// &lt;/returns&gt;
+			constructor = constructor || function () { };
+			if (instanceMembers) {
+				initializeProperties(constructor.prototype, instanceMembers);
+			}
+			if (staticMembers) {
+				initializeProperties(constructor, staticMembers);
+			}
+			return constructor;
+		}
+
+		function derive(baseClass, constructor, instanceMembers, staticMembers) {
+			/// &lt;summary locid="13"&gt;
+			/// Uses prototypal inheritance to create a sub-class based on the supplied baseClass parameter.
+			/// &lt;/summary&gt;
+			/// &lt;param name="baseClass" type="Function" locid="14"&gt;
+			/// The class to inherit from.
+			/// &lt;/param&gt;
+			/// &lt;param name="constructor" type="Function" locid="9"&gt;
+			/// A constructor function that will be used to instantiate this class.
+			/// &lt;/param&gt;
+			/// &lt;param name="instanceMembers" type="Object" locid="10"&gt;
+			/// The set of instance fields, properties and methods to be made available on the class.
+			/// &lt;/param&gt;
+			/// &lt;param name="staticMembers" type="Object" locid="11"&gt;
+			/// The set of static fields, properties and methods to be made available on the class.
+			/// &lt;/param&gt;
+			/// &lt;returns type="Function" locid="12"&gt;
+			/// The newly defined class.
+			/// &lt;/returns&gt;
+			if (baseClass) {
+				constructor = constructor || function () { };
+				var basePrototype = baseClass.prototype;
+				constructor.prototype = Object.create(basePrototype);
+				Object.defineProperty(constructor.prototype, "_super", { value: basePrototype });
+				Object.defineProperty(constructor.prototype, "constructor", { value: constructor });
+				if (instanceMembers) {
+					initializeProperties(constructor.prototype, instanceMembers);
+				}
+				if (staticMembers) {
+					initializeProperties(constructor, staticMembers);
+				}
+				return constructor;
+			} else {
+				return define(constructor, instanceMembers, staticMembers);
+			}
+		}
+
+		function mix(constructor) {
+			/// &lt;summary locid="15"&gt;
+			/// Defines a class using the given constructor and the union of the set of instance members
+			/// specified by all the mixin objects.  The mixin parameter list can be of variable length.
+			/// &lt;/summary&gt;
+			/// &lt;param name="constructor" locid="9"&gt;
+			/// A constructor function that will be used to instantiate this class.
+			/// &lt;/param&gt;
+			/// &lt;returns locid="12"&gt;
+			/// The newly defined class.
+			/// &lt;/returns&gt;
+			constructor = constructor || function () { };
+			var i, len;
+			for (i = 0, len = arguments.length; i &lt; len; i++) {
+				initializeProperties(constructor.prototype, arguments[i]);
+			}
+			return constructor;
+		}
+
+		// Establish members of "WinJS.Class" namespace
+		WinJS.Namespace.define("WinJS.Class", {
+			define: define,
+			derive: derive,
+			mix: mix
+		});
+
+	})(WinJS);
+
+})(this);</pre>
+	<a id="gh-link" href="https://github.com/Microsoft/monaco-editor"><img
+		width="149" height="149" alt="Fork me on GitHub" src="data:image/png;base64,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"/></a>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html">Monaco Editor</a>
+				</div>
+				<!-- collapse button for smaller screens -->
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<!-- navbar title -->
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li><a class="nav-item" href="index.html">Home</a></li>
+						<li><a class="nav-item" href="api/index.html">API Doc</a></li>
+						<li><a class="nav-item" href="playground.html">Playground</a></li>
+						<li><a class="nav-item" href="monarch.html">Monarch</a></li>
+						<li><a class="nav-item" target="_blank" href="https://registry.npmjs.org/monaco-editor/-/monaco-editor-0.23.0.tgz">Download 0.23.0</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<section class="try">
+		<div class="container">
+			<h3>About</h3>
+			<div class="row">
+				<div class="span12">
+					<br/>
+					<p>The Monaco Editor is the code editor that powers <a href="https://github.com/Microsoft/vscode">VS Code</a>.
+					A good page describing the code editor's features is <a href="https://code.visualstudio.com/docs/editor/editingevolved">here</a>.</p>
+
+					<p>It is licensed under the MIT License and supports Edge, Chrome, Firefox, Safari and Opera.</p>
+
+					<p>The Monaco editor is <span style="font-weight:bold;color:#ff5722;">not</span> supported in mobile browsers or mobile web frameworks. </p>
+
+					<p>Find more information at the <a href="https://github.com/Microsoft/monaco-editor">Monaco Editor repo</a>.</p>
+				</div>
+			</div>
+			<hr/>
+			<h3>Download v0.23.0</h3>
+			<div class="row">
+				<div class="span12">
+					<br/>
+					<p>The latest released version is <strong>0.23.0</strong>.</p>
+					<p>Download with this direct <a target="_blank" href="https://registry.npmjs.org/monaco-editor/-/monaco-editor-0.23.0.tgz">download link</a>
+					or <a href="https://www.npmjs.com/package/monaco-editor">from npm</a>:</p>
+					<pre style="color:black">npm install monaco-editor@0.23.0</pre>
+				</div>
+			</div>
+			<hr/>
+			<h3>Editor</h3>
+			<div class="editor row">
+				<div class="span3">
+					<h4 title="Syntax colorization plus support for errors, warnings, IntelliSense, formatting and outlining">Rich IntelliSense, Validation</h4>
+					<p>TypeScript, JavaScript, CSS, LESS, SCSS, JSON, HTML</p>
+					<br>
+					<h4 title="Syntax colorization">Basic Syntax Colorization</h4>
+					<p>XML, PHP, C#, C++, Razor, Markdown, Diff, Java, VB, CoffeeScript, Handlebars, Batch, Pug, F#, Lua, Powershell,
+						Python, Ruby, SASS, R, Objective-C</p>
+					<br>
+					<p>Colorizers are implemented using <a href="monarch.html"
+						target="_blank">Monarch</a>.</p>
+				</div>
+				<div class="span9">
+					<div class="row">
+						<div class="span4">
+							<label class="control-label">Language</label>
+							<select class="language-picker"></select>
+						</div>
+						<div class="span4">
+							<label class="control-label">Theme</label>
+							<select class="theme-picker">
+								<option>Visual Studio</option>
+								<option>Visual Studio Dark</option>
+								<option>High Contrast Dark</option>
+							</select>
+						</div>
+					</div>
+					<div class="editor-frame">
+						<div class="loading editor" style="display: none;">
+							<div class="progress progress-striped active">
+								<div class="bar"></div>
+							</div>
+						</div>
+						<div id="editor"></div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<h3>Diff Editor</h3>
+			<div class="editor row">
+				<div class="span3">
+					<h4 title="As you type diffing for all supported languages">Side by side live comparison</h4>
+					<p>Supports all languages out of the box</p>
+				</div>
+				<div class="span9">
+					<div class="row">
+						<div class="span8">
+							<div class="checkbox">
+								<label class="control-label">
+									<input id="inline-diff-checkbox" type="checkbox" value=""> Inline diff
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="editor-frame">
+						<div class="loading diff-editor" style="display: none;">
+							<div class="progress progress-striped active">
+								<div class="bar"></div>
+							</div>
+						</div>
+						<div id="diff-editor"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<footer class="container">
+		<hr>
+		<p class="text-center">
+			<a href="https://microsoft.com" title="Microsoft">
+				<img src="https://opensource.microsoft.com/assets/images/Microsoft_logo.svg" alt="Microsoft" style="max-height:23px;margin-bottom:12px;">
+			</a>
+			<br/>
+			<small>&copy; 2021 Microsoft</small>
+		</p>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/bootstrap.min.js" integrity="sha256-u+l2mGjpmGK/mFgUncmMcFKdMijvV+J3odlDJZSNUu8=" crossorigin="anonymous"></script>
+
+	<script>var require = { paths: { 'vs': 'node_modules/monaco-editor/min/vs' } };</script>
+	<script src="node_modules/monaco-editor/min/vs/loader.js"></script>
+	<script src="node_modules/monaco-editor/min/vs/editor/editor.main.nls.js"></script>
+	<script src="node_modules/monaco-editor/min/vs/editor/editor.main.js"></script>
+	<script>/// <reference path="../../release/monaco.d.ts" />
+
+"use strict";
+
+var editor = null, diffEditor = null;
+
+$(document).ready(function() {
+	require(['vs/editor/editor.main'], function () {
+		var MODES = (function() {
+			var modesIds = monaco.languages.getLanguages().map(function(lang) { return lang.id; });
+			modesIds.sort();
+
+			return modesIds.map(function(modeId) {
+				return {
+					modeId: modeId,
+					sampleURL: 'index/samples/sample.' + modeId + '.txt'
+				};
+			});
+		})();
+
+		var startModeIndex = 0;
+		for (var i = 0; i < MODES.length; i++) {
+			var o = document.createElement('option');
+			o.textContent = MODES[i].modeId;
+			if (MODES[i].modeId === 'typescript') {
+				startModeIndex = i;
+			}
+			$(".language-picker").append(o);
+		}
+		$(".language-picker")[0].selectedIndex = startModeIndex;
+		loadSample(MODES[startModeIndex]);
+		$(".language-picker").change(function() {
+			loadSample(MODES[this.selectedIndex]);
+		});
+
+		$(".theme-picker").change(function() {
+			changeTheme(this.selectedIndex);
+		});
+
+		loadDiffSample();
+
+		$('#inline-diff-checkbox').change(function () {
+			diffEditor.updateOptions({
+				renderSideBySide: !$(this).is(':checked')
+			});
+		});
+	});
+
+	window.onresize = function () {
+		if (editor) {
+			editor.layout();
+		}
+		if (diffEditor) {
+			diffEditor.layout();
+		}
+	};
+});
+
+var preloaded = {};
+(function() {
+	var elements = Array.prototype.slice.call(document.querySelectorAll('pre[data-preload]'), 0);
+
+	elements.forEach(function(el) {
+		var path = el.getAttribute('data-preload');
+		preloaded[path] = el.innerText || el.textContent;
+		el.parentNode.removeChild(el);
+	});
+})();
+
+function xhr(url, cb) {
+	if (preloaded[url]) {
+		return cb(null, preloaded[url]);
+	}
+	$.ajax({
+		type: 'GET',
+		url: url,
+		dataType: 'text',
+		error: function () {
+			cb(this, null);
+		}
+	}).done(function(data) {
+		cb(null, data);
+	});
+}
+
+function loadSample(mode) {
+	$('.loading.editor').show();
+	xhr(mode.sampleURL, function(err, data) {
+		if (err) {
+			if (editor) {
+				if (editor.getModel()) {
+					editor.getModel().dispose();
+				}
+				editor.dispose();
+				editor = null;
+			}
+			$('.loading.editor').fadeOut({ duration: 200 });
+			$('#editor').empty();
+			$('#editor').append('<p class="alert alert-error">Failed to load ' + mode.modeId + ' sample</p>');
+			return;
+		}
+
+		if (!editor) {
+			$('#editor').empty();
+			editor = monaco.editor.create(document.getElementById('editor'), {
+				model: null,
+			});
+		}
+
+		var oldModel = editor.getModel();
+		var newModel = monaco.editor.createModel(data, mode.modeId);
+		editor.setModel(newModel);
+		if (oldModel) {
+			oldModel.dispose();
+		}
+		$('.loading.editor').fadeOut({ duration: 300 });
+	})
+}
+
+function loadDiffSample() {
+
+	var onError = function() {
+		$('.loading.diff-editor').fadeOut({ duration: 200 });
+		$('#diff-editor').append('<p class="alert alert-error">Failed to load diff editor sample</p>');
+	};
+
+	$('.loading.diff-editor').show();
+
+	var lhsData = null, rhsData = null, jsMode = null;
+
+	xhr('index/samples/diff.lhs.txt', function(err, data) {
+		if (err) {
+			return onError();
+		}
+		lhsData = data;
+		onProgress();
+	})
+	xhr('index/samples/diff.rhs.txt', function(err, data) {
+		if (err) {
+			return onError();
+		}
+		rhsData = data;
+		onProgress();
+	})
+
+	function onProgress() {
+		if (lhsData && rhsData) {
+			diffEditor = monaco.editor.createDiffEditor(document.getElementById('diff-editor'), {
+				enableSplitViewResizing: false
+			});
+
+			var lhsModel = monaco.editor.createModel(lhsData, 'text/javascript');
+			var rhsModel = monaco.editor.createModel(rhsData, 'text/javascript');
+
+			diffEditor.setModel({
+				original: lhsModel,
+				modified: rhsModel
+			});
+
+			$('.loading.diff-editor').fadeOut({ duration: 300 });
+		}
+	}
+}
+
+function changeTheme(theme) {
+	var newTheme = (theme === 1 ? 'vs-dark' : ( theme === 0 ? 'vs' : 'hc-black' ));
+	monaco.editor.setTheme(newTheme);
+}
+</script>
+
+</body>
+</html>

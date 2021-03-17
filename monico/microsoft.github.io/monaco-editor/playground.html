@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Monaco Editor Playground</title>
+
+	<style>/*!
+ * Bootstrap v2.3.0
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */footer,nav,section{display:block}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}a:active,a:hover{outline:0}img{height:auto;max-width:100%;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic}button{margin:0;font-size:100%;vertical-align:middle}button{line-height:normal}button::-moz-focus-inner{padding:0;border:0}button{cursor:pointer;-webkit-appearance:button}button{cursor:pointer}@media print{*{color:#000!important;text-shadow:none!important;background:0 0!important;box-shadow:none!important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}pre{border:1px solid #999;page-break-inside:avoid}img{page-break-inside:avoid}img{max-width:100%!important}@page{margin:.5cm}p{orphans:3;widows:3}}body{margin:0;line-height:20px;color:#555;background-color:#fff}a{color:#007fff;text-decoration:none}a:focus,a:hover{color:#06c;text-decoration:underline}.container,.navbar-fixed-top .container{width:940px}.container{margin-right:auto;margin-left:auto}.container:after,.container:before{display:table;line-height:0;content:""}.container:after{clear:both}p{margin:0 0 10px}small{font-size:85%}.text-center{text-align:center}ul{padding:0;margin:0 0 10px 25px}li{line-height:20px}hr{margin:20px 0;border:0;border-top:1px solid #eee;border-bottom:1px solid #fff}pre{padding:0 3px 2px;font-family:Monaco,Menlo,Consolas,"Courier New",monospace;font-size:12px;color:#999;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:20px;word-break:break-all;word-wrap:break-word;white-space:pre;white-space:pre-wrap;background-color:#f5f5f5;border:1px solid #ccc;border:1px solid rgba(0,0,0,.15);-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}button{font-size:14px;font-weight:400;line-height:20px}button{font-family:"Open Sans",Calibri,Candara,Arial,sans-serif}[class^=icon-]{display:inline-block;width:14px;height:14px;margin-top:1px;line-height:14px;vertical-align:text-top;background-image:url("../img/glyphicons-halflings.png");background-position:14px 14px;background-repeat:no-repeat}.collapse{position:relative;height:0;overflow:hidden;-webkit-transition:height .35s ease;-moz-transition:height .35s ease;-o-transition:height .35s ease;transition:height .35s ease}.btn{display:inline-block;padding:4px 12px;margin-bottom:0;font-size:14px;line-height:20px;color:#999;text-align:center;text-shadow:0 1px 1px rgba(255,255,255,.75);vertical-align:middle;cursor:pointer;background-color:#dfdfdf;background-image:-moz-linear-gradient(top,#eee,#c8c8c8);background-image:-webkit-gradient(linear,0 0,0 100%,from(#eee),to(#c8c8c8));background-image:-webkit-linear-gradient(top,#eee,#c8c8c8);background-image:-o-linear-gradient(top,#eee,#c8c8c8);background-image:linear-gradient(to bottom,#eee,#c8c8c8);background-repeat:repeat-x;border:1px solid #bbb;border-color:#c8c8c8 #c8c8c8 #a2a2a2;border-color:rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);border-bottom-color:#a2a2a2;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05)}.btn:active,.btn:focus,.btn:hover{color:#999;background-color:#c8c8c8}.btn:focus,.btn:hover{color:#999;text-decoration:none;background-position:0 -15px;-webkit-transition:background-position .1s linear;-moz-transition:background-position .1s linear;-o-transition:background-position .1s linear;transition:background-position .1s linear}.btn:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}.btn:active{background-image:none;outline:0;-webkit-box-shadow:inset 0 2px 4px rgba(0,0,0,.15),0 1px 2px rgba(0,0,0,.05);-moz-box-shadow:inset 0 2px 4px rgba(0,0,0,.15),0 1px 2px rgba(0,0,0,.05);box-shadow:inset 0 2px 4px rgba(0,0,0,.15),0 1px 2px rgba(0,0,0,.05)}button.btn::-moz-focus-inner{padding:0;border:0}.alert{padding:8px 35px 8px 14px;margin-bottom:20px;text-shadow:0 1px 0 rgba(255,255,255,.5);background-color:#ff7518;border:1px solid transparent;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.alert,.alert h4{color:#fff}.alert h4{margin:0}.alert .close{position:relative;top:-2px;right:-21px;line-height:20px}.alert-success{color:#fff;background-color:#3fb618;border-color:transparent}.alert-success h4{color:#fff}.alert-danger,.alert-error{color:#fff;background-color:#ff0039;border-color:transparent}.alert-danger h4,.alert-error h4{color:#fff}.alert-info{color:#fff;background-color:#9954bb;border-color:transparent}.alert-info h4{color:#fff}.alert-block{padding-top:14px;padding-bottom:14px}.alert-block>p,.alert-block>ul{margin-bottom:0}.alert-block p+p{margin-top:5px}.nav{margin-bottom:20px;margin-left:0;list-style:none}.nav>li>a{display:block}.nav>li>a:focus,.nav>li>a:hover{text-decoration:none;background-color:#eee}.navbar{margin-bottom:20px;overflow:visible}.navbar-inner{min-height:50px;padding-right:20px;padding-left:20px;background-color:#080808;background-image:-moz-linear-gradient(top,#080808,#080808);background-image:-webkit-gradient(linear,0 0,0 100%,from(#080808),to(#080808));background-image:-webkit-linear-gradient(top,#080808,#080808);background-image:-o-linear-gradient(top,#080808,#080808);background-image:linear-gradient(to bottom,#080808,#080808);background-repeat:repeat-x;border:1px solid transparent;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:0 1px 4px rgba(0,0,0,.065);-moz-box-shadow:0 1px 4px rgba(0,0,0,.065);box-shadow:0 1px 4px rgba(0,0,0,.065)}.navbar-inner:after,.navbar-inner:before{display:table;line-height:0;content:""}.navbar-inner:after{clear:both}.navbar .container{width:auto}.nav-collapse.collapse{height:auto;overflow:visible}.navbar .btn{margin-top:10px}.navbar-fixed-top{position:fixed;right:0;left:0;z-index:1030;margin-bottom:0}.navbar-fixed-top .navbar-inner{border-width:0 0 1px}.navbar-fixed-top .navbar-inner{padding-right:0;padding-left:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.navbar-fixed-top .container{width:940px}.navbar-fixed-top{top:0}.navbar-fixed-top .navbar-inner{-webkit-box-shadow:0 1px 10px rgba(0,0,0,.1);-moz-box-shadow:0 1px 10px rgba(0,0,0,.1);box-shadow:0 1px 10px rgba(0,0,0,.1)}.navbar .nav{position:relative;left:0;display:block;float:left;margin:0 10px 0 0}.navbar .nav>li{float:left}.navbar .nav>li>a{float:none;padding:15px 15px 15px;color:#fff;text-decoration:none;text-shadow:0 1px 0 #080808}.navbar .nav>li>a:focus,.navbar .nav>li>a:hover{color:#bbb;text-decoration:none;background-color:rgba(0,0,0,.05)}.navbar .btn-navbar{display:none;float:right;padding:7px 10px;margin-right:5px;margin-left:5px;color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,.25);background-color:#000;background-image:-moz-linear-gradient(top,#000,#000);background-image:-webkit-gradient(linear,0 0,0 100%,from(#000),to(#000));background-image:-webkit-linear-gradient(top,#000,#000);background-image:-o-linear-gradient(top,#000,#000);background-image:linear-gradient(to bottom,#000,#000);background-repeat:repeat-x;border-color:#000 #000 #000;border-color:rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.075);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.075);box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.075)}.navbar .btn-navbar:active,.navbar .btn-navbar:focus,.navbar .btn-navbar:hover{color:#fff;background-color:#000}.navbar .btn-navbar .icon-bar{display:block;width:18px;height:2px;background-color:#f5f5f5;-webkit-border-radius:1px;-moz-border-radius:1px;border-radius:1px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.25);-moz-box-shadow:0 1px 0 rgba(0,0,0,.25);box-shadow:0 1px 0 rgba(0,0,0,.25)}.btn-navbar .icon-bar+.icon-bar{margin-top:3px}.navbar-inverse .navbar-inner{background-color:#007fff;background-image:-moz-linear-gradient(top,#007fff,#007fff);background-image:-webkit-gradient(linear,0 0,0 100%,from(#007fff),to(#007fff));background-image:-webkit-linear-gradient(top,#007fff,#007fff);background-image:-o-linear-gradient(top,#007fff,#007fff);background-image:linear-gradient(to bottom,#007fff,#007fff);background-repeat:repeat-x;border-color:transparent}.navbar-inverse .nav>li>a{color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,.25)}.navbar-inverse .nav>li>a:focus,.navbar-inverse .nav>li>a:hover{color:#fff}.navbar-inverse .nav>li>a:focus,.navbar-inverse .nav>li>a:hover{color:#fff;background-color:rgba(0,0,0,.05)}.navbar-inverse .btn-navbar{color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,.25);background-color:#0072e6;background-image:-moz-linear-gradient(top,#0072e6,#0072e6);background-image:-webkit-gradient(linear,0 0,0 100%,from(#0072e6),to(#0072e6));background-image:-webkit-linear-gradient(top,#0072e6,#0072e6);background-image:-o-linear-gradient(top,#0072e6,#0072e6);background-image:linear-gradient(to bottom,#0072e6,#0072e6);background-repeat:repeat-x;border-color:#0072e6 #0072e6 #004c99;border-color:rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25)}.navbar-inverse .btn-navbar:active,.navbar-inverse .btn-navbar:focus,.navbar-inverse .btn-navbar:hover{color:#fff;background-color:#0072e6}body{font-weight:300}.navbar .navbar-inner{background-image:none;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.navbar-inverse .nav>li>a{text-shadow:none}.btn{padding:5px 12px;text-shadow:none;background-image:none;border:none;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.alert{text-shadow:none;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.alert h1,.alert h2,.alert h3,.alert h4,.alert h5,.alert h6,.alert-heading{color:#fff}[class^=icon-]{margin:0 2px;vertical-align:-2px}/*!
+ * Bootstrap Responsive v2.3.0
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */@-ms-viewport{width:device-width}@media(min-width:1200px){.container,.navbar-fixed-top .container{width:1170px}}@media(min-width:768px) and (max-width:979px){.container,.navbar-fixed-top .container{width:724px}}@media(max-width:767px){body{padding-right:20px;padding-left:20px}.navbar-fixed-top{margin-right:-20px;margin-left:-20px}.container{width:auto}}@media(max-width:480px){.nav-collapse{-webkit-transform:translate3d(0,0,0)}}@media(max-width:979px){body{padding-top:0}.navbar-fixed-top{position:static}.navbar-fixed-top{margin-bottom:20px}.navbar-fixed-top .navbar-inner{padding:5px}.navbar .container{width:auto;padding:0}.nav-collapse{clear:both}.nav-collapse .nav{float:none;margin:0 0 10px}.nav-collapse .nav>li{float:none}.nav-collapse .nav>li>a{margin-bottom:2px}.nav-collapse .nav>li>a{padding:9px 15px;font-weight:700;color:#777;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}.nav-collapse .nav>li>a:focus,.nav-collapse .nav>li>a:hover{background-color:#f2f2f2}.navbar-inverse .nav-collapse .nav>li>a{color:#999}.navbar-inverse .nav-collapse .nav>li>a:focus,.navbar-inverse .nav-collapse .nav>li>a:hover{background-color:#111}.nav-collapse,.nav-collapse.collapse{height:0;overflow:hidden}.navbar .btn-navbar{display:block}}@media(min-width:980px){.nav-collapse.collapse{height:auto!important;overflow:visible!important}}body{padding:54px 0 40px 0;overflow-y:scroll}body,button{font:400 14px/1.4em "Segoe UI","Open Sans",Calibri,Candara,Arial,sans-serif}.navbar .nav{float:left;margin-right:0}a{color:#06c;cursor:pointer}.alert h1,.alert h2,.alert h3,.alert h4,.alert h5,.alert h6,.alert-heading{color:inherit}.alert-info{color:#3a87ad;background-color:#d9edf7}.navbar-inverse .navbar-inner{background-color:#68217a;-webkit-filter:none;filter:none}.navbar-inverse .btn-navbar{background:0 0;margin-top:14px}.navbar-inverse .btn-navbar:active,.navbar-inverse .btn-navbar:focus,.navbar-inverse .btn-navbar:hover{background:#442359}.navbar .nav>li>a{text-shadow:none;padding-top:18px;font-size:14px;text-transform:uppercase}.navbar-inverse .nav-collapse .nav>li>a{color:#fff;padding-left:0}.navbar-inverse .nav>li>a.nav-item:focus,.navbar-inverse .nav>li>a.nav-item:hover{background-color:rgba(0,0,0,.12)}.navbar .logo{padding:16px 12px 0 0;height:35px;display:block;float:left}.navbar .logo a{color:#fff;font-size:24px;letter-spacing:-1px}.navbar-fixed-top{z-index:500}#gh-link{display:none;position:fixed;top:0;right:0;border:0;margin:0;z-index:1000}@media (min-width:980px){#gh-link{display:block}}@media (min-width:980px){.navbar .nav{float:right}.navbar-inverse .nav-collapse .nav>li>a{padding-left:15px}}@media (max-width:979px){body{padding:inherit}.navbar-fixed-top{margin-right:inherit;margin-left:inherit;margin-bottom:0}.navbar-fixed-top .navbar-inner{padding:0 20px}.navbar .container{width:724px}}@media (max-width:767px){.navbar .container{width:100%}}@media (max-width:480px){.navbar .logo a{display:none}}#loading .spinner{margin:100px auto;width:50px;height:40px;text-align:center;font-size:10px}#loading .spinner>div{background-color:#333;height:100%;width:6px;display:inline-block;-webkit-animation:sk-stretchdelay 1.2s infinite ease-in-out;animation:sk-stretchdelay 1.2s infinite ease-in-out}#loading .spinner .rect2{-webkit-animation-delay:-1.1s;animation-delay:-1.1s}#loading .spinner .rect3{-webkit-animation-delay:-1s;animation-delay:-1s}#loading .spinner .rect4{-webkit-animation-delay:-.9s;animation-delay:-.9s}#loading .spinner .rect5{-webkit-animation-delay:-.8s;animation-delay:-.8s}@-webkit-keyframes sk-stretchdelay{0%,100%,40%{-webkit-transform:scaleY(.4)}20%{-webkit-transform:scaleY(1)}}@keyframes sk-stretchdelay{0%,100%,40%{transform:scaleY(.4);-webkit-transform:scaleY(.4)}20%{transform:scaleY(1);-webkit-transform:scaleY(1)}}body{margin:0;padding:0;font-family:"Segoe UI",Arial,HelveticaNeue-Light,sans-serif;font-size:13px;overflow:hidden}.playground-page .title{font-family:"Segoe UI Light",HelveticaNeue-UltraLight,sans-serif;font-weight:100;font-size:1.8em}.playground-page .tabArea{height:20px;box-sizing:border-box;border-bottom:1px solid #999}.playground-page .tab{height:20px;line-height:20px;box-sizing:border-box;color:#999;padding:0 8px;border:1px solid #999;border-bottom:0;cursor:pointer;float:left}.playground-page .tab.active{color:#000;border-bottom:1px solid #fff}.playground-page .action{height:20px;line-height:20px;box-sizing:border-box;color:#000;padding:0 5px;border:1px solid #999;border-bottom:0;cursor:pointer;float:right;padding-left:16px}.playground-page .action.run{background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAE1JREFUOE9jKCsrY6AEU6QZZPHgNeA/0Hn7gdiBUPjg8gLIABjGaxAxBuA1iBQDYAalIXuLFAOweoUYA8gOA4pigegERrRCXOlhGBgAAGmggVf7bEk0AAAAAElFTkSuQmCC') no-repeat left center}.playground-page .editor-container{border:1px solid #999;border-top:0}</style>
+	
+	
+	
+	
+
+	<link data-name="vs/editor/editor.main" rel="stylesheet" href="node_modules/monaco-editor/min/vs/editor/editor.main.css">
+</head>
+<body class="playground-page">
+	<pre data-preload="playground/new-samples/creating-the-editor/hello-world/sample.js" style="display:none">// The Monaco Editor can be easily created, given an
+// empty container and an options literal.
+// Two members of the literal are "value" and "language".
+// The editor takes the full size of its container.
+
+monaco.editor.create(document.getElementById("container"), {
+	value: "function hello() {\n\talert('Hello world!');\n}",
+	language: "javascript"
+});
+</pre>
+	<pre data-preload="playground/new-samples/creating-the-editor/hello-world/sample.css" style="display:none">
+</pre>
+	<pre data-preload="playground/new-samples/creating-the-editor/hello-world/sample.html" style="display:none">&lt;div id="container" style="height:100%;"&gt;&lt;/div&gt;
+</pre>
+
+	<a id="gh-link" href="https://github.com/Microsoft/monaco-editor"><img
+		width="149" height="149" alt="Fork me on GitHub" src="data:image/png;base64,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"/></a>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html">Monaco Editor</a>
+				</div>
+				<!-- collapse button for smaller screens -->
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<!-- navbar title -->
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li><a class="nav-item" href="index.html">Home</a></li>
+						<li><a class="nav-item" href="api/index.html">API Doc</a></li>
+						<li><a class="nav-item" href="playground.html">Playground</a></li>
+						<li><a class="nav-item" href="monarch.html">Monarch</a></li>
+						<li><a class="nav-item" target="_blank" href="https://registry.npmjs.org/monaco-editor/-/monaco-editor-0.23.0.tgz">Download 0.23.0</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div id="loading">
+		<div class="spinner">
+			<div class="rect1"></div>
+			<div class="rect2"></div>
+			<div class="rect3"></div>
+			<div class="rect4"></div>
+			<div class="rect5"></div>
+		</div>
+	</div>
+
+	<section id="playground">
+	</section>
+
+	<footer class="container">
+		<hr>
+		<p class="text-center">
+			<small>&copy; 2021 Microsoft</small>
+		</p>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/bootstrap.min.js" integrity="sha256-u+l2mGjpmGK/mFgUncmMcFKdMijvV+J3odlDJZSNUu8=" crossorigin="anonymous"></script>
+
+	<script>var require = { paths: { 'vs': 'node_modules/monaco-editor/min/vs' } };</script>
+	<script src="node_modules/monaco-editor/min/vs/loader.js"></script>
+	<script src="node_modules/monaco-editor/min/vs/editor/editor.main.nls.js"></script>
+	<script src="node_modules/monaco-editor/min/vs/editor/editor.main.js"></script>
+
+	<script>(function() {
+
+var PLAY_SAMPLES = [
+	{
+		chapter: "Creating the editor",
+		name: "Hello world!",
+		id: "creating-the-editor-hello-world",
+		path: "creating-the-editor/hello-world"
+	},
+	{
+		chapter: "Creating the editor",
+		name: "Editor basic options",
+		id: "creating-the-editor-editor-basic-options",
+		path: "creating-the-editor/editor-basic-options"
+	},
+	{
+		chapter: "Creating the editor",
+		name: "Hard wrapping",
+		id: "creating-the-editor-hard-wrapping",
+		path: "creating-the-editor/hard-wrapping"
+	},
+	{
+		chapter: "Creating the editor",
+		name: "Syntax highlighting for HTML elements",
+		id: "creating-the-editor-syntax-highlighting-for-html-elements",
+		path: "creating-the-editor/syntax-highlighting-for-html-elements"
+	},
+	{
+		chapter: "Interacting with the editor",
+		name: "Adding a command to an editor instance",
+		id: "interacting-with-the-editor-adding-a-command-to-an-editor-instance",
+		path: "interacting-with-the-editor/adding-a-command-to-an-editor-instance"
+	},
+	{
+		chapter: "Interacting with the editor",
+		name: "Adding an action to an editor instance",
+		id: "interacting-with-the-editor-adding-an-action-to-an-editor-instance",
+		path: "interacting-with-the-editor/adding-an-action-to-an-editor-instance"
+	},
+	{
+		chapter: "Interacting with the editor",
+		name: "Revealing a position",
+		id: "interacting-with-the-editor-revealing-a-position",
+		path: "interacting-with-the-editor/revealing-a-position"
+	},
+	{
+		chapter: "Interacting with the editor",
+		name: "Rendering glyphs in the margin",
+		id: "interacting-with-the-editor-rendering-glyphs-in-the-margin",
+		path: "interacting-with-the-editor/rendering-glyphs-in-the-margin"
+	},
+	{
+		chapter: "Interacting with the editor",
+		name: "Line and Inline decorations",
+		id: "interacting-with-the-editor-line-and-inline-decorations",
+		path: "interacting-with-the-editor/line-and-inline-decorations"
+	},
+	{
+		chapter: "Interacting with the editor",
+		name: "Customizing the line numbers",
+		id: "interacting-with-the-editor-customizing-the-line-numbers",
+		path: "interacting-with-the-editor/customizing-the-line-numbers"
+	},
+	{
+		chapter: "Interacting with the editor",
+		name: "Listening to mouse events",
+		id: "interacting-with-the-editor-listening-to-mouse-events",
+		path: "interacting-with-the-editor/listening-to-mouse-events"
+	},
+	{
+		chapter: "Interacting with the editor",
+		name: "Listening to key events",
+		id: "interacting-with-the-editor-listening-to-key-events",
+		path: "interacting-with-the-editor/listening-to-key-events"
+	},
+	{
+		chapter: "Customizing the appearence",
+		name: "Exposed colors",
+		id: "customizing-the-appearence-exposed-colors",
+		path: "customizing-the-appearence/exposed-colors"
+	},
+	{
+		chapter: "Customizing the appearence",
+		name: "Scrollbars",
+		id: "customizing-the-appearence-scrollbars",
+		path: "customizing-the-appearence/scrollbars"
+	},
+	{
+		chapter: "Customizing the appearence",
+		name: "Tokens and colors",
+		id: "customizing-the-appearence-tokens-and-colors",
+		path: "customizing-the-appearence/tokens-and-colors"
+	},
+	{
+		chapter: "Creating the DiffEditor",
+		name: "Hello diff world!",
+		id: "creating-the-diffeditor-hello-diff-world",
+		path: "creating-the-diffeditor/hello-diff-world"
+	},
+	{
+		chapter: "Creating the DiffEditor",
+		name: "Multi-line example",
+		id: "creating-the-diffeditor-multi-line-example",
+		path: "creating-the-diffeditor/multi-line-example"
+	},
+	{
+		chapter: "Creating the DiffEditor",
+		name: "Inline Diff Example",
+		id: "creating-the-diffeditor-inline-diff-example",
+		path: "creating-the-diffeditor/inline-diff-example"
+	},
+	{
+		chapter: "Creating the DiffEditor",
+		name: "Navigating a Diff",
+		id: "creating-the-diffeditor-navigating-a-diff",
+		path: "creating-the-diffeditor/navigating-a-diff"
+	},
+	{
+		chapter: "Extending Language Services",
+		name: "Custom languages",
+		id: "extending-language-services-custom-languages",
+		path: "extending-language-services/custom-languages"
+	},
+	{
+		chapter: "Extending Language Services",
+		name: "Completion provider example",
+		id: "extending-language-services-completion-provider-example",
+		path: "extending-language-services/completion-provider-example"
+	},
+	{
+		chapter: "Extending Language Services",
+		name: "Codelens provider example",
+		id: "extending-language-services-codelens-provider-example",
+		path: "extending-language-services/codelens-provider-example"
+	},
+	{
+		chapter: "Extending Language Services",
+		name: "Color provider example",
+		id: "extending-language-services-color-provider-example",
+		path: "extending-language-services/color-provider-example"
+	},
+	{
+		chapter: "Extending Language Services",
+		name: "Symbols provider example",
+		id: "extending-language-services-symbols-provider-example",
+		path: "extending-language-services/symbols-provider-example"
+	},
+	{
+		chapter: "Extending Language Services",
+		name: "Folding provider example",
+		id: "extending-language-services-folding-provider-example",
+		path: "extending-language-services/folding-provider-example"
+	},
+	{
+		chapter: "Extending Language Services",
+		name: "Hover provider example",
+		id: "extending-language-services-hover-provider-example",
+		path: "extending-language-services/hover-provider-example"
+	},
+	{
+		chapter: "Extending Language Services",
+		name: "Semantic tokens provider example",
+		id: "extending-language-services-semantic-tokens-provider-example",
+		path: "extending-language-services/semantic-tokens-provider-example"
+	},
+	{
+		chapter: "Extending Language Services",
+		name: "Configure JavaScript defaults",
+		id: "extending-language-services-configure-javascript-defaults",
+		path: "extending-language-services/configure-javascript-defaults"
+	},
+	{
+		chapter: "Extending Language Services",
+		name: "Configure JSON defaults",
+		id: "extending-language-services-configure-json-defaults",
+		path: "extending-language-services/configure-json-defaults"
+	}
+];
+
+if (typeof exports !== 'undefined') {
+	exports.PLAY_SAMPLES = PLAY_SAMPLES
+} else {
+	self.PLAY_SAMPLES = PLAY_SAMPLES;
+}
+
+})();
+</script>
+	<script>/// <reference path="../../release/monaco.d.ts" />
+
+(function () {
+
+	'use strict';
+
+	var isMac = /Mac/i.test(navigator.userAgent);
+	window.onload = function () {
+		require(['vs/editor/editor.main'], function () {
+			xhr('playground/monaco.d.ts.txt').then(function (response) {
+				monaco.languages.typescript.javascriptDefaults.addExtraLib(response.responseText, 'ts:monaco.d.ts');
+				monaco.languages.typescript.javascriptDefaults.addExtraLib([
+					'declare var require: {',
+					'	toUrl(path: string): string;',
+					'	(moduleName: string): any;',
+					'	(dependencies: string[], callback: (...args: any[]) => any, errorback?: (err: any) => void): any;',
+					'	config(data: any): any;',
+					'	onError: Function;',
+					'};',
+				].join('\n'), 'ts:require.d.ts');
+			});
+
+			var loading = document.getElementById('loading');
+			loading.parentNode.removeChild(loading);
+			load();
+
+		});
+	};
+
+	var editor = null;
+	var data = {
+		js: {
+			model: null,
+			state: null
+		},
+		css: {
+			model: null,
+			state: null
+		},
+		html: {
+			model: null,
+			state: null
+		}
+	};
+
+	function load() {
+
+		function layout() {
+			var GLOBAL_PADDING = 20;
+
+			var WIDTH = window.innerWidth - 2 * GLOBAL_PADDING;
+			var HEIGHT = window.innerHeight;
+
+			var TITLE_HEIGHT = 110;
+			var FOOTER_HEIGHT = 80;
+			var TABS_HEIGHT = 20;
+			var INNER_PADDING = 20;
+			var SWITCHER_HEIGHT = 30;
+
+			var HALF_WIDTH = Math.floor((WIDTH - INNER_PADDING) / 2);
+			var REMAINING_HEIGHT = HEIGHT - TITLE_HEIGHT - FOOTER_HEIGHT - SWITCHER_HEIGHT;
+
+			playgroundContainer.style.width = WIDTH + 'px';
+			playgroundContainer.style.height = (HEIGHT - FOOTER_HEIGHT) + 'px';
+
+			sampleSwitcher.style.position = 'absolute';
+			sampleSwitcher.style.top = TITLE_HEIGHT + 'px';
+			sampleSwitcher.style.left = GLOBAL_PADDING + 'px';
+
+			typingContainer.style.position = 'absolute';
+			typingContainer.style.top = GLOBAL_PADDING + TITLE_HEIGHT + SWITCHER_HEIGHT + 'px';
+			typingContainer.style.left = GLOBAL_PADDING + 'px';
+			typingContainer.style.width = HALF_WIDTH + 'px';
+			typingContainer.style.height = REMAINING_HEIGHT + 'px';
+
+			tabArea.style.position = 'absolute';
+			tabArea.style.boxSizing = 'border-box';
+			tabArea.style.top = 0;
+			tabArea.style.left = 0;
+			tabArea.style.width = HALF_WIDTH + 'px';
+			tabArea.style.height = TABS_HEIGHT + 'px';
+
+			editorContainer.style.position = 'absolute';
+			editorContainer.style.boxSizing = 'border-box';
+			editorContainer.style.top = TABS_HEIGHT + 'px';
+			editorContainer.style.left = 0;
+			editorContainer.style.width = HALF_WIDTH + 'px';
+			editorContainer.style.height = (REMAINING_HEIGHT - TABS_HEIGHT) + 'px';
+
+			if (editor) {
+				editor.layout({
+					width: HALF_WIDTH - 2,
+					height: (REMAINING_HEIGHT - TABS_HEIGHT) - 1
+				});
+			}
+
+			runContainer.style.position = 'absolute';
+			runContainer.style.top = GLOBAL_PADDING + TITLE_HEIGHT + SWITCHER_HEIGHT + TABS_HEIGHT + 'px';
+			runContainer.style.left = GLOBAL_PADDING + INNER_PADDING + HALF_WIDTH + 'px';
+			runContainer.style.width = HALF_WIDTH + 'px';
+			runContainer.style.height = (REMAINING_HEIGHT - TABS_HEIGHT) + 'px';
+
+			runIframeHeight = (REMAINING_HEIGHT - TABS_HEIGHT);
+			if (runIframe) {
+				runIframe.style.height = runIframeHeight + 'px';
+			}
+		}
+
+		function changeTab(selectedTabNode, desiredModelId) {
+			for (var i = 0; i < tabArea.childNodes.length; i++) {
+				var child = tabArea.childNodes[i];
+				if (/tab/.test(child.className)) {
+					child.className = 'tab';
+				}
+			}
+			selectedTabNode.className = 'tab active';
+
+			var currentState = editor.saveViewState();
+
+			var currentModel = editor.getModel();
+			if (currentModel === data.js.model) {
+				data.js.state = currentState;
+			} else if (currentModel === data.css.model) {
+				data.css.state = currentState;
+			} else if (currentModel === data.html.model) {
+				data.html.state = currentState;
+			}
+
+			editor.setModel(data[desiredModelId].model);
+			editor.restoreViewState(data[desiredModelId].state);
+			editor.focus();
+		}
+
+
+		// create the typing side
+		var typingContainer = document.createElement('div');
+		typingContainer.className = 'typingContainer';
+
+		var tabArea = (function () {
+			var tabArea = document.createElement('div');
+			tabArea.className = 'tabArea';
+
+			var jsTab = document.createElement('span');
+			jsTab.className = 'tab active';
+			jsTab.appendChild(document.createTextNode('JavaScript'));
+			jsTab.onclick = function () { changeTab(jsTab, 'js'); };
+			tabArea.appendChild(jsTab);
+
+			var cssTab = document.createElement('span');
+			cssTab.className = 'tab';
+			cssTab.appendChild(document.createTextNode('CSS'));
+			cssTab.onclick = function () { changeTab(cssTab, 'css'); };
+			tabArea.appendChild(cssTab);
+
+			var htmlTab = document.createElement('span');
+			htmlTab.className = 'tab';
+			htmlTab.appendChild(document.createTextNode('HTML'));
+			htmlTab.onclick = function () { changeTab(htmlTab, 'html'); };
+			tabArea.appendChild(htmlTab);
+
+			var runLabel = 'Press ' + (isMac ? 'CMD + return' : 'CTRL + Enter') + ' to run the code.';
+			var runBtn = document.createElement('button');
+			runBtn.className = 'action run';
+			runBtn.setAttribute('role', 'button');
+			runBtn.setAttribute('aria-label', runLabel);
+			runBtn.appendChild(document.createTextNode('Run'));
+			runBtn.onclick = function () { run(); };
+			tabArea.appendChild(runBtn);
+
+			return tabArea;
+		})();
+
+		var editorContainer = document.createElement('div');
+		editorContainer.className = 'editor-container';
+
+		typingContainer.appendChild(tabArea);
+		typingContainer.appendChild(editorContainer);
+
+		var runContainer = document.createElement('div');
+		runContainer.className = 'run-container';
+
+		var sampleSwitcher = document.createElement('select');
+		var sampleChapter;
+		PLAY_SAMPLES.forEach(function (sample) {
+			if (!sampleChapter || sampleChapter.label !== sample.chapter) {
+				sampleChapter = document.createElement('optgroup');
+				sampleChapter.label = sample.chapter;
+				sampleSwitcher.appendChild(sampleChapter);
+			}
+			var sampleOption = document.createElement('option');
+			sampleOption.value = sample.id;
+			sampleOption.appendChild(document.createTextNode(sample.name));
+			sampleChapter.appendChild(sampleOption);
+		});
+		sampleSwitcher.className = 'sample-switcher';
+
+		var LOADED_SAMPLES = [];
+		function findLoadedSample(sampleId) {
+			for (var i = 0; i < LOADED_SAMPLES.length; i++) {
+				var sample = LOADED_SAMPLES[i];
+				if (sample.id === sampleId) {
+					return sample;
+				}
+			}
+			return null;
+		}
+
+		function findSamplePath(sampleId) {
+			for (var i = 0; i < PLAY_SAMPLES.length; i++) {
+				var sample = PLAY_SAMPLES[i];
+				if (sample.id === sampleId) {
+					return sample.path;
+				}
+			}
+			return null;
+		}
+
+		function loadSample(sampleId, callback) {
+			var sample = findLoadedSample(sampleId);
+			if (sample) {
+				return callback(null, sample);
+			}
+
+			var samplePath = findSamplePath(sampleId);
+			if (!samplePath) {
+				return callback(new Error('sample not found'));
+			}
+
+			samplePath = 'playground/new-samples/' + samplePath;
+
+			var js = xhr(samplePath + '/sample.js').then(function (response) { return response.responseText });
+			var css = xhr(samplePath + '/sample.css').then(function (response) { return response.responseText });
+			var html = xhr(samplePath + '/sample.html').then(function (response) { return response.responseText });
+			Promise.all([js, css, html]).then(function (_) {
+				var js = _[0];
+				var css = _[1];
+				var html = _[2];
+				LOADED_SAMPLES.push({
+					id: sampleId,
+					js: js,
+					css: css,
+					html: html
+				});
+				return callback(null, findLoadedSample(sampleId));
+			}, function (err) {
+				callback(err, null);
+			});
+		}
+
+		sampleSwitcher.onchange = function () {
+			var sampleId = sampleSwitcher.options[sampleSwitcher.selectedIndex].value;
+			window.location.hash = sampleId;
+		};
+
+		var playgroundContainer = document.getElementById('playground');
+
+		layout();
+		window.onresize = layout;
+
+		playgroundContainer.appendChild(sampleSwitcher);
+		playgroundContainer.appendChild(typingContainer);
+		playgroundContainer.appendChild(runContainer);
+
+		data.js.model = monaco.editor.createModel('console.log("hi")', 'javascript');
+		data.css.model = monaco.editor.createModel('css', 'css');
+		data.html.model = monaco.editor.createModel('html', 'html');
+
+		editor = monaco.editor.create(editorContainer, {
+			model: data.js.model,
+			minimap: {
+				enabled: false
+			}
+		});
+
+		var currentToken = 0;
+		function parseHash(firstTime) {
+			var sampleId = window.location.hash.replace(/^#/, '');
+			if (!sampleId) {
+				sampleId = PLAY_SAMPLES[0].id;
+			}
+
+			if (firstTime) {
+				for (var i = 0; i < sampleSwitcher.options.length; i++) {
+					var opt = sampleSwitcher.options[i];
+					if (opt.value === sampleId) {
+						sampleSwitcher.selectedIndex = i;
+						break;
+					}
+				}
+			}
+
+			var myToken = (++currentToken);
+			loadSample(sampleId, function (err, sample) {
+				if (err) {
+					alert('Sample not found! ' + err.message);
+					return;
+				}
+				if (myToken !== currentToken) {
+					return;
+				}
+				data.js.model.setValue(sample.js);
+				data.html.model.setValue(sample.html);
+				data.css.model.setValue(sample.css);
+				editor.setScrollTop(0);
+				run();
+			});
+		}
+		window.onhashchange = parseHash;
+		parseHash(true);
+
+		function run() {
+			doRun(runContainer);
+		}
+
+		editor.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.Enter, run);
+		window.addEventListener('keydown', function keyDown(ev) {
+			if ((isMac && !ev.metaKey) || !ev.ctrlKey) {
+				return;
+			}
+
+			if (ev.shiftKey || ev.altKey || ev.keyCode !== 13) {
+				return;
+			}
+
+			ev.preventDefault();
+			run();
+		});
+	}
+
+	var runIframe = null, runIframeHeight = 0;
+	function doRun(runContainer) {
+		if (runIframe) {
+			// Unload old iframe
+			runContainer.removeChild(runIframe);
+		}
+
+		// Load new iframe
+		runIframe = document.createElement('iframe');
+		runIframe.id = 'runner';
+		runIframe.src = 'playground/playground-runner.html';
+		runIframe.className = 'run-iframe';
+		runIframe.style.boxSizing = 'border-box';
+		runIframe.style.height = runIframeHeight + 'px';
+		runIframe.style.width = '100%';
+		runIframe.style.border = '1px solid lightgrey';
+		runIframe.frameborder = '0';
+		runContainer.appendChild(runIframe);
+
+		var getLang = function (lang) {
+			return data[lang].model.getValue();
+		};
+
+		runIframe.addEventListener('load', function (e) {
+			runIframe.contentWindow.load(getLang('js'), getLang('html'), getLang('css'));
+		});
+	}
+
+	var preloaded = {};
+	(function () {
+		var elements = Array.prototype.slice.call(document.querySelectorAll('pre[data-preload]'), 0);
+
+		elements.forEach(function (el) {
+			var path = el.getAttribute('data-preload');
+			preloaded[path] = el.innerText || el.textContent;
+			el.parentNode.removeChild(el);
+		});
+	})();
+
+	function xhr(url) {
+		if (preloaded[url]) {
+			return Promise.resolve({
+				responseText: preloaded[url]
+			});
+		}
+
+		var req = null;
+		return new Promise(function (c, e) {
+			req = new XMLHttpRequest();
+			req.onreadystatechange = function () {
+				if (req._canceled) { return; }
+
+				if (req.readyState === 4) {
+					if ((req.status >= 200 && req.status < 300) || req.status === 1223) {
+						c(req);
+					} else {
+						e(req);
+					}
+					req.onreadystatechange = function () { };
+				}
+			};
+
+			req.open("GET", url, true);
+			req.responseType = "";
+
+			req.send(null);
+		}, function () {
+			req._canceled = true;
+			req.abort();
+		});
+	}
+
+})();
+</script>
+</body>
+</html>

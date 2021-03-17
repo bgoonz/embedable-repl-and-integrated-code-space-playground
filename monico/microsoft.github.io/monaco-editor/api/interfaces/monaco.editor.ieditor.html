@@ -1,0 +1,1525 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>IEditor | Monaco Editor API</title>
+	<meta name="description" content="Documentation for Monaco Editor API">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="https://microsoft.github.io/monaco-editor/" class="title">Monaco Editor API</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../index.html">Monaco Editor API</a>
+				</li>
+				<li>
+					<a href="../modules/monaco.html">monaco</a>
+				</li>
+				<li>
+					<a href="../modules/monaco.editor.html">editor</a>
+				</li>
+				<li>
+					<a href="monaco.editor.ieditor.html">IEditor</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>An editor.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">IEditor</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="monaco.editor.icodeeditor.html" class="tsd-signature-type" data-tsd-kind="Interface">ICodeEditor</a>
+							</li>
+							<li>
+								<a href="monaco.editor.idiffeditor.html" class="tsd-signature-type" data-tsd-kind="Interface">IDiffEditor</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Events</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-event tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#ondiddispose" class="tsd-kind-icon">on<wbr>Did<wbr>Dispose</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#focus" class="tsd-kind-icon">focus</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#geteditortype" class="tsd-kind-icon">get<wbr>Editor<wbr>Type</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#getid" class="tsd-kind-icon">get<wbr>Id</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#getmodel" class="tsd-kind-icon">get<wbr>Model</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#getposition" class="tsd-kind-icon">get<wbr>Position</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#getselection" class="tsd-kind-icon">get<wbr>Selection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#getselections" class="tsd-kind-icon">get<wbr>Selections</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#getsupportedactions" class="tsd-kind-icon">get<wbr>Supported<wbr>Actions</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#getvisiblecolumnfromposition" class="tsd-kind-icon">get<wbr>Visible<wbr>Column<wbr>From<wbr>Position</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#hastextfocus" class="tsd-kind-icon">has<wbr>Text<wbr>Focus</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#layout" class="tsd-kind-icon">layout</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#restoreviewstate" class="tsd-kind-icon">restore<wbr>View<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#revealline" class="tsd-kind-icon">reveal<wbr>Line</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#reveallineincenter" class="tsd-kind-icon">reveal<wbr>Line<wbr>InCenter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#reveallineincenterifoutsideviewport" class="tsd-kind-icon">reveal<wbr>Line<wbr>InCenter<wbr>IfOutside<wbr>Viewport</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#reveallineneartop" class="tsd-kind-icon">reveal<wbr>Line<wbr>Near<wbr>Top</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#reveallines" class="tsd-kind-icon">reveal<wbr>Lines</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#reveallinesincenter" class="tsd-kind-icon">reveal<wbr>Lines<wbr>InCenter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#reveallinesincenterifoutsideviewport" class="tsd-kind-icon">reveal<wbr>Lines<wbr>InCenter<wbr>IfOutside<wbr>Viewport</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#reveallinesneartop" class="tsd-kind-icon">reveal<wbr>Lines<wbr>Near<wbr>Top</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#revealposition" class="tsd-kind-icon">reveal<wbr>Position</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#revealpositionincenter" class="tsd-kind-icon">reveal<wbr>Position<wbr>InCenter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#revealpositionincenterifoutsideviewport" class="tsd-kind-icon">reveal<wbr>Position<wbr>InCenter<wbr>IfOutside<wbr>Viewport</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#revealpositionneartop" class="tsd-kind-icon">reveal<wbr>Position<wbr>Near<wbr>Top</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#revealrange" class="tsd-kind-icon">reveal<wbr>Range</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#revealrangeattop" class="tsd-kind-icon">reveal<wbr>Range<wbr>AtTop</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#revealrangeincenter" class="tsd-kind-icon">reveal<wbr>Range<wbr>InCenter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#revealrangeincenterifoutsideviewport" class="tsd-kind-icon">reveal<wbr>Range<wbr>InCenter<wbr>IfOutside<wbr>Viewport</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#revealrangeneartop" class="tsd-kind-icon">reveal<wbr>Range<wbr>Near<wbr>Top</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#revealrangeneartopifoutsideviewport" class="tsd-kind-icon">reveal<wbr>Range<wbr>Near<wbr>Top<wbr>IfOutside<wbr>Viewport</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#saveviewstate" class="tsd-kind-icon">save<wbr>View<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#setmodel" class="tsd-kind-icon">set<wbr>Model</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#setposition" class="tsd-kind-icon">set<wbr>Position</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#setselection" class="tsd-kind-icon">set<wbr>Selection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#setselections" class="tsd-kind-icon">set<wbr>Selections</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#trigger" class="tsd-kind-icon">trigger</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="monaco.editor.ieditor.html#updateoptions" class="tsd-kind-icon">update<wbr>Options</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Events</h2>
+				<section class="tsd-panel tsd-member tsd-kind-event tsd-parent-kind-interface">
+					<a name="ondiddispose" class="tsd-anchor"></a>
+					<h3>on<wbr>Did<wbr>Dispose</h3>
+					<ul class="tsd-signatures tsd-kind-event tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Dispose<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.idisposable.html" class="tsd-signature-type" data-tsd-kind="Interface">IDisposable</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2207">monaco.d.ts:2207</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>An event emitted when the editor has been disposed.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>listener: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="monaco.idisposable.html" class="tsd-signature-type" data-tsd-kind="Interface">IDisposable</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2211">monaco.d.ts:2211</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Dispose the editor.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="focus" class="tsd-anchor"></a>
+					<h3>focus</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">focus<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2235">monaco.d.ts:2235</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Brings browser focus to the editor text</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="geteditortype" class="tsd-anchor"></a>
+					<h3>get<wbr>Editor<wbr>Type</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Editor<wbr>Type<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2220">monaco.d.ts:2220</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the editor type. Please see <code>EditorType</code>.
+									This is to avoid an instanceof check</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getid" class="tsd-anchor"></a>
+					<h3>get<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Id<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2215">monaco.d.ts:2215</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a unique id for this editor instance.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getmodel" class="tsd-anchor"></a>
+					<h3>get<wbr>Model</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Model<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/monaco.editor.html#ieditormodel" class="tsd-signature-type" data-tsd-kind="Type alias">IEditorModel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2385">monaco.d.ts:2385</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the current model attached to this editor.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/monaco.editor.html#ieditormodel" class="tsd-signature-type" data-tsd-kind="Type alias">IEditorModel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getposition" class="tsd-anchor"></a>
+					<h3>get<wbr>Position</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Position<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/monaco.position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2259">monaco.d.ts:2259</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the primary position of the cursor.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/monaco.position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getselection" class="tsd-anchor"></a>
+					<h3>get<wbr>Selection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Selection<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/monaco.selection.html" class="tsd-signature-type" data-tsd-kind="Class">Selection</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2302">monaco.d.ts:2302</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the primary selection of the editor.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/monaco.selection.html" class="tsd-signature-type" data-tsd-kind="Class">Selection</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getselections" class="tsd-anchor"></a>
+					<h3>get<wbr>Selections</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Selections<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/monaco.selection.html" class="tsd-signature-type" data-tsd-kind="Class">Selection</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2306">monaco.d.ts:2306</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns all the selections of the editor.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/monaco.selection.html" class="tsd-signature-type" data-tsd-kind="Class">Selection</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getsupportedactions" class="tsd-anchor"></a>
+					<h3>get<wbr>Supported<wbr>Actions</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Supported<wbr>Actions<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="monaco.editor.ieditoraction.html" class="tsd-signature-type" data-tsd-kind="Interface">IEditorAction</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2243">monaco.d.ts:2243</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns all actions associated with this editor.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="monaco.editor.ieditoraction.html" class="tsd-signature-type" data-tsd-kind="Interface">IEditorAction</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getvisiblecolumnfromposition" class="tsd-anchor"></a>
+					<h3>get<wbr>Visible<wbr>Column<wbr>From<wbr>Position</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Visible<wbr>Column<wbr>From<wbr>Position<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="monaco.iposition.html" class="tsd-signature-type" data-tsd-kind="Interface">IPosition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2255">monaco.d.ts:2255</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Given a position, returns a column number that takes tab-widths into account.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <a href="monaco.iposition.html" class="tsd-signature-type" data-tsd-kind="Interface">IPosition</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="hastextfocus" class="tsd-anchor"></a>
+					<h3>has<wbr>Text<wbr>Focus</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Text<wbr>Focus<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2239">monaco.d.ts:2239</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns true if the text inside this editor is focused (i.e. cursor is blinking).</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="layout" class="tsd-anchor"></a>
+					<h3>layout</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">layout<span class="tsd-signature-symbol">(</span>dimension<span class="tsd-signature-symbol">?: </span><a href="monaco.editor.idimension.html" class="tsd-signature-type" data-tsd-kind="Interface">IDimension</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2231">monaco.d.ts:2231</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Instructs the editor to remeasure its container. This method should
+									be called when the container of the editor gets resized.</p>
+								</div>
+								<p>If a dimension is passed in, the passed in value will be used.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> dimension: <a href="monaco.editor.idimension.html" class="tsd-signature-type" data-tsd-kind="Interface">IDimension</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="restoreviewstate" class="tsd-anchor"></a>
+					<h3>restore<wbr>View<wbr>State</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">restore<wbr>View<wbr>State<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="../modules/monaco.editor.html#ieditorviewstate" class="tsd-signature-type" data-tsd-kind="Type alias">IEditorViewState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2251">monaco.d.ts:2251</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Restores the view state of the editor from a serializable object generated by <code>saveViewState</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <a href="../modules/monaco.editor.html#ieditorviewstate" class="tsd-signature-type" data-tsd-kind="Type alias">IEditorViewState</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="revealline" class="tsd-anchor"></a>
+					<h3>reveal<wbr>Line</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">reveal<wbr>Line<span class="tsd-signature-symbol">(</span>lineNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, scrollType<span class="tsd-signature-symbol">?: </span><a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2268">monaco.d.ts:2268</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll vertically as necessary and reveal a line.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>lineNumber: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scrollType: <a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="reveallineincenter" class="tsd-anchor"></a>
+					<h3>reveal<wbr>Line<wbr>InCenter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">reveal<wbr>Line<wbr>InCenter<span class="tsd-signature-symbol">(</span>lineNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, scrollType<span class="tsd-signature-symbol">?: </span><a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2272">monaco.d.ts:2272</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll vertically as necessary and reveal a line centered vertically.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>lineNumber: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scrollType: <a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="reveallineincenterifoutsideviewport" class="tsd-anchor"></a>
+					<h3>reveal<wbr>Line<wbr>InCenter<wbr>IfOutside<wbr>Viewport</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">reveal<wbr>Line<wbr>InCenter<wbr>IfOutside<wbr>Viewport<span class="tsd-signature-symbol">(</span>lineNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, scrollType<span class="tsd-signature-symbol">?: </span><a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2276">monaco.d.ts:2276</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll vertically as necessary and reveal a line centered vertically only if it lies outside the viewport.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>lineNumber: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scrollType: <a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="reveallineneartop" class="tsd-anchor"></a>
+					<h3>reveal<wbr>Line<wbr>Near<wbr>Top</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">reveal<wbr>Line<wbr>Near<wbr>Top<span class="tsd-signature-symbol">(</span>lineNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, scrollType<span class="tsd-signature-symbol">?: </span><a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2281">monaco.d.ts:2281</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll vertically as necessary and reveal a line close to the top of the viewport,
+									optimized for viewing a code definition.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>lineNumber: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scrollType: <a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="reveallines" class="tsd-anchor"></a>
+					<h3>reveal<wbr>Lines</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">reveal<wbr>Lines<span class="tsd-signature-symbol">(</span>startLineNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endLineNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, scrollType<span class="tsd-signature-symbol">?: </span><a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2335">monaco.d.ts:2335</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll vertically as necessary and reveal lines.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>startLineNumber: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>endLineNumber: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scrollType: <a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="reveallinesincenter" class="tsd-anchor"></a>
+					<h3>reveal<wbr>Lines<wbr>InCenter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">reveal<wbr>Lines<wbr>InCenter<span class="tsd-signature-symbol">(</span>lineNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endLineNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, scrollType<span class="tsd-signature-symbol">?: </span><a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2339">monaco.d.ts:2339</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll vertically as necessary and reveal lines centered vertically.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>lineNumber: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>endLineNumber: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scrollType: <a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="reveallinesincenterifoutsideviewport" class="tsd-anchor"></a>
+					<h3>reveal<wbr>Lines<wbr>InCenter<wbr>IfOutside<wbr>Viewport</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">reveal<wbr>Lines<wbr>InCenter<wbr>IfOutside<wbr>Viewport<span class="tsd-signature-symbol">(</span>lineNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endLineNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, scrollType<span class="tsd-signature-symbol">?: </span><a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2343">monaco.d.ts:2343</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll vertically as necessary and reveal lines centered vertically only if it lies outside the viewport.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>lineNumber: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>endLineNumber: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scrollType: <a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="reveallinesneartop" class="tsd-anchor"></a>
+					<h3>reveal<wbr>Lines<wbr>Near<wbr>Top</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">reveal<wbr>Lines<wbr>Near<wbr>Top<span class="tsd-signature-symbol">(</span>lineNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endLineNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, scrollType<span class="tsd-signature-symbol">?: </span><a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2348">monaco.d.ts:2348</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll vertically as necessary and reveal lines close to the top of the viewport,
+									optimized for viewing a code definition.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>lineNumber: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>endLineNumber: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scrollType: <a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="revealposition" class="tsd-anchor"></a>
+					<h3>reveal<wbr>Position</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">reveal<wbr>Position<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="monaco.iposition.html" class="tsd-signature-type" data-tsd-kind="Interface">IPosition</a>, scrollType<span class="tsd-signature-symbol">?: </span><a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2285">monaco.d.ts:2285</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll vertically or horizontally as necessary and reveal a position.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <a href="monaco.iposition.html" class="tsd-signature-type" data-tsd-kind="Interface">IPosition</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scrollType: <a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="revealpositionincenter" class="tsd-anchor"></a>
+					<h3>reveal<wbr>Position<wbr>InCenter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">reveal<wbr>Position<wbr>InCenter<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="monaco.iposition.html" class="tsd-signature-type" data-tsd-kind="Interface">IPosition</a>, scrollType<span class="tsd-signature-symbol">?: </span><a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2289">monaco.d.ts:2289</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll vertically or horizontally as necessary and reveal a position centered vertically.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <a href="monaco.iposition.html" class="tsd-signature-type" data-tsd-kind="Interface">IPosition</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scrollType: <a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="revealpositionincenterifoutsideviewport" class="tsd-anchor"></a>
+					<h3>reveal<wbr>Position<wbr>InCenter<wbr>IfOutside<wbr>Viewport</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">reveal<wbr>Position<wbr>InCenter<wbr>IfOutside<wbr>Viewport<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="monaco.iposition.html" class="tsd-signature-type" data-tsd-kind="Interface">IPosition</a>, scrollType<span class="tsd-signature-symbol">?: </span><a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2293">monaco.d.ts:2293</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll vertically or horizontally as necessary and reveal a position centered vertically only if it lies outside the viewport.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <a href="monaco.iposition.html" class="tsd-signature-type" data-tsd-kind="Interface">IPosition</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scrollType: <a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="revealpositionneartop" class="tsd-anchor"></a>
+					<h3>reveal<wbr>Position<wbr>Near<wbr>Top</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">reveal<wbr>Position<wbr>Near<wbr>Top<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="monaco.iposition.html" class="tsd-signature-type" data-tsd-kind="Interface">IPosition</a>, scrollType<span class="tsd-signature-symbol">?: </span><a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2298">monaco.d.ts:2298</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll vertically or horizontally as necessary and reveal a position close to the top of the viewport,
+									optimized for viewing a code definition.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <a href="monaco.iposition.html" class="tsd-signature-type" data-tsd-kind="Interface">IPosition</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scrollType: <a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="revealrange" class="tsd-anchor"></a>
+					<h3>reveal<wbr>Range</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">reveal<wbr>Range<span class="tsd-signature-symbol">(</span>range<span class="tsd-signature-symbol">: </span><a href="monaco.irange.html" class="tsd-signature-type" data-tsd-kind="Interface">IRange</a>, scrollType<span class="tsd-signature-symbol">?: </span><a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2352">monaco.d.ts:2352</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll vertically or horizontally as necessary and reveal a range.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>range: <a href="monaco.irange.html" class="tsd-signature-type" data-tsd-kind="Interface">IRange</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scrollType: <a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="revealrangeattop" class="tsd-anchor"></a>
+					<h3>reveal<wbr>Range<wbr>AtTop</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">reveal<wbr>Range<wbr>AtTop<span class="tsd-signature-symbol">(</span>range<span class="tsd-signature-symbol">: </span><a href="monaco.irange.html" class="tsd-signature-type" data-tsd-kind="Interface">IRange</a>, scrollType<span class="tsd-signature-symbol">?: </span><a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2360">monaco.d.ts:2360</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll vertically or horizontally as necessary and reveal a range at the top of the viewport.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>range: <a href="monaco.irange.html" class="tsd-signature-type" data-tsd-kind="Interface">IRange</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scrollType: <a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="revealrangeincenter" class="tsd-anchor"></a>
+					<h3>reveal<wbr>Range<wbr>InCenter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">reveal<wbr>Range<wbr>InCenter<span class="tsd-signature-symbol">(</span>range<span class="tsd-signature-symbol">: </span><a href="monaco.irange.html" class="tsd-signature-type" data-tsd-kind="Interface">IRange</a>, scrollType<span class="tsd-signature-symbol">?: </span><a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2356">monaco.d.ts:2356</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll vertically or horizontally as necessary and reveal a range centered vertically.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>range: <a href="monaco.irange.html" class="tsd-signature-type" data-tsd-kind="Interface">IRange</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scrollType: <a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="revealrangeincenterifoutsideviewport" class="tsd-anchor"></a>
+					<h3>reveal<wbr>Range<wbr>InCenter<wbr>IfOutside<wbr>Viewport</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">reveal<wbr>Range<wbr>InCenter<wbr>IfOutside<wbr>Viewport<span class="tsd-signature-symbol">(</span>range<span class="tsd-signature-symbol">: </span><a href="monaco.irange.html" class="tsd-signature-type" data-tsd-kind="Interface">IRange</a>, scrollType<span class="tsd-signature-symbol">?: </span><a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2364">monaco.d.ts:2364</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll vertically or horizontally as necessary and reveal a range centered vertically only if it lies outside the viewport.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>range: <a href="monaco.irange.html" class="tsd-signature-type" data-tsd-kind="Interface">IRange</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scrollType: <a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="revealrangeneartop" class="tsd-anchor"></a>
+					<h3>reveal<wbr>Range<wbr>Near<wbr>Top</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">reveal<wbr>Range<wbr>Near<wbr>Top<span class="tsd-signature-symbol">(</span>range<span class="tsd-signature-symbol">: </span><a href="monaco.irange.html" class="tsd-signature-type" data-tsd-kind="Interface">IRange</a>, scrollType<span class="tsd-signature-symbol">?: </span><a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2369">monaco.d.ts:2369</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll vertically or horizontally as necessary and reveal a range close to the top of the viewport,
+									optimized for viewing a code definition.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>range: <a href="monaco.irange.html" class="tsd-signature-type" data-tsd-kind="Interface">IRange</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scrollType: <a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="revealrangeneartopifoutsideviewport" class="tsd-anchor"></a>
+					<h3>reveal<wbr>Range<wbr>Near<wbr>Top<wbr>IfOutside<wbr>Viewport</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">reveal<wbr>Range<wbr>Near<wbr>Top<wbr>IfOutside<wbr>Viewport<span class="tsd-signature-symbol">(</span>range<span class="tsd-signature-symbol">: </span><a href="monaco.irange.html" class="tsd-signature-type" data-tsd-kind="Interface">IRange</a>, scrollType<span class="tsd-signature-symbol">?: </span><a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2374">monaco.d.ts:2374</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll vertically or horizontally as necessary and reveal a range close to the top of the viewport,
+									optimized for viewing a code definition. Only if it lies outside the viewport.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>range: <a href="monaco.irange.html" class="tsd-signature-type" data-tsd-kind="Interface">IRange</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scrollType: <a href="../enums/monaco.editor.scrolltype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ScrollType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="saveviewstate" class="tsd-anchor"></a>
+					<h3>save<wbr>View<wbr>State</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">save<wbr>View<wbr>State<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/monaco.editor.html#ieditorviewstate" class="tsd-signature-type" data-tsd-kind="Type alias">IEditorViewState</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2247">monaco.d.ts:2247</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Saves current view state of the editor in a serializable object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/monaco.editor.html#ieditorviewstate" class="tsd-signature-type" data-tsd-kind="Type alias">IEditorViewState</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="setmodel" class="tsd-anchor"></a>
+					<h3>set<wbr>Model</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Model<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="../modules/monaco.editor.html#ieditormodel" class="tsd-signature-type" data-tsd-kind="Type alias">IEditorModel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2394">monaco.d.ts:2394</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the current model attached to this editor.
+										If the previous model was created by the editor via the value key in the options
+										literal object, it will be destroyed. Otherwise, if the previous model was set
+										via setModel, or the model key in the options literal object, the previous model
+										will not be destroyed.
+									It is safe to call setModel(null) to simply detach the current model from the editor.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>model: <a href="../modules/monaco.editor.html#ieditormodel" class="tsd-signature-type" data-tsd-kind="Type alias">IEditorModel</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="setposition" class="tsd-anchor"></a>
+					<h3>set<wbr>Position</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Position<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><a href="monaco.iposition.html" class="tsd-signature-type" data-tsd-kind="Interface">IPosition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2264">monaco.d.ts:2264</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the primary position of the cursor. This will remove any secondary cursors.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <a href="monaco.iposition.html" class="tsd-signature-type" data-tsd-kind="Interface">IPosition</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>New primary cursor&#39;s position</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="setselection" class="tsd-anchor"></a>
+					<h3>set<wbr>Selection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Selection<span class="tsd-signature-symbol">(</span>selection<span class="tsd-signature-symbol">: </span><a href="monaco.irange.html" class="tsd-signature-type" data-tsd-kind="Interface">IRange</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Selection<span class="tsd-signature-symbol">(</span>selection<span class="tsd-signature-symbol">: </span><a href="../classes/monaco.range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Selection<span class="tsd-signature-symbol">(</span>selection<span class="tsd-signature-symbol">: </span><a href="monaco.iselection.html" class="tsd-signature-type" data-tsd-kind="Interface">ISelection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Selection<span class="tsd-signature-symbol">(</span>selection<span class="tsd-signature-symbol">: </span><a href="../classes/monaco.selection.html" class="tsd-signature-type" data-tsd-kind="Class">Selection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2311">monaco.d.ts:2311</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the primary selection of the editor. This will remove any secondary cursors.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>selection: <a href="monaco.irange.html" class="tsd-signature-type" data-tsd-kind="Interface">IRange</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The new selection</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2316">monaco.d.ts:2316</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the primary selection of the editor. This will remove any secondary cursors.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>selection: <a href="../classes/monaco.range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The new selection</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2321">monaco.d.ts:2321</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the primary selection of the editor. This will remove any secondary cursors.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>selection: <a href="monaco.iselection.html" class="tsd-signature-type" data-tsd-kind="Interface">ISelection</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The new selection</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2326">monaco.d.ts:2326</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the primary selection of the editor. This will remove any secondary cursors.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>selection: <a href="../classes/monaco.selection.html" class="tsd-signature-type" data-tsd-kind="Class">Selection</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The new selection</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="setselections" class="tsd-anchor"></a>
+					<h3>set<wbr>Selections</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Selections<span class="tsd-signature-symbol">(</span>selections<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><a href="monaco.iselection.html" class="tsd-signature-type" data-tsd-kind="Interface">ISelection</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2331">monaco.d.ts:2331</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set the selections for all the cursors of the editor.
+									Cursors will be removed or added, as necessary.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>selections: <span class="tsd-signature-symbol">readonly </span><a href="monaco.iselection.html" class="tsd-signature-type" data-tsd-kind="Interface">ISelection</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="trigger" class="tsd-anchor"></a>
+					<h3>trigger</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">trigger<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, handlerId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, payload<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2381">monaco.d.ts:2381</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Directly trigger a handler or an editor action.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>source: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The source of the call.</p>
+									</div>
+								</li>
+								<li>
+									<h5>handlerId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The id of the handler or the id of a contribution.</p>
+									</div>
+								</li>
+								<li>
+									<h5>payload: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Extra data to be sent to the handler.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="updateoptions" class="tsd-anchor"></a>
+					<h3>update<wbr>Options</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Options<span class="tsd-signature-symbol">(</span>newOptions<span class="tsd-signature-symbol">: </span><a href="monaco.editor.ieditoroptions.html" class="tsd-signature-type" data-tsd-kind="Interface">IEditorOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/microsoft/monaco-editor/blob/92d6800/typedoc/monaco.d.ts#L2224">monaco.d.ts:2224</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Update the editor&#39;s options after the editor has been created.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>newOptions: <a href="monaco.editor.ieditoroptions.html" class="tsd-signature-type" data-tsd-kind="Interface">IEditorOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../index.html">Exports</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="../modules/monaco.html">monaco</a>
+					</li>
+					<li class="current tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.editor.html">monaco.editor</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.html">monaco.languages</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.css.html">monaco.languages.css</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.html.html">monaco.languages.html</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.json.html">monaco.languages.json</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.languages.typescript.html">monaco.languages.typescript</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+						<a href="../modules/monaco.worker.html">monaco.worker</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="monaco.editor.ieditor.html" class="tsd-kind-icon">IEditor</a>
+						<ul>
+							<li class=" tsd-kind-event tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#ondiddispose" class="tsd-kind-icon">on<wbr>Did<wbr>Dispose</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#focus" class="tsd-kind-icon">focus</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#geteditortype" class="tsd-kind-icon">get<wbr>Editor<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#getid" class="tsd-kind-icon">get<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#getmodel" class="tsd-kind-icon">get<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#getposition" class="tsd-kind-icon">get<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#getselection" class="tsd-kind-icon">get<wbr>Selection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#getselections" class="tsd-kind-icon">get<wbr>Selections</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#getsupportedactions" class="tsd-kind-icon">get<wbr>Supported<wbr>Actions</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#getvisiblecolumnfromposition" class="tsd-kind-icon">get<wbr>Visible<wbr>Column<wbr>From<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#hastextfocus" class="tsd-kind-icon">has<wbr>Text<wbr>Focus</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#layout" class="tsd-kind-icon">layout</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#restoreviewstate" class="tsd-kind-icon">restore<wbr>View<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#revealline" class="tsd-kind-icon">reveal<wbr>Line</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#reveallineincenter" class="tsd-kind-icon">reveal<wbr>Line<wbr>InCenter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#reveallineincenterifoutsideviewport" class="tsd-kind-icon">reveal<wbr>Line<wbr>InCenter<wbr>IfOutside<wbr>Viewport</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#reveallineneartop" class="tsd-kind-icon">reveal<wbr>Line<wbr>Near<wbr>Top</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#reveallines" class="tsd-kind-icon">reveal<wbr>Lines</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#reveallinesincenter" class="tsd-kind-icon">reveal<wbr>Lines<wbr>InCenter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#reveallinesincenterifoutsideviewport" class="tsd-kind-icon">reveal<wbr>Lines<wbr>InCenter<wbr>IfOutside<wbr>Viewport</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#reveallinesneartop" class="tsd-kind-icon">reveal<wbr>Lines<wbr>Near<wbr>Top</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#revealposition" class="tsd-kind-icon">reveal<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#revealpositionincenter" class="tsd-kind-icon">reveal<wbr>Position<wbr>InCenter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#revealpositionincenterifoutsideviewport" class="tsd-kind-icon">reveal<wbr>Position<wbr>InCenter<wbr>IfOutside<wbr>Viewport</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#revealpositionneartop" class="tsd-kind-icon">reveal<wbr>Position<wbr>Near<wbr>Top</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#revealrange" class="tsd-kind-icon">reveal<wbr>Range</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#revealrangeattop" class="tsd-kind-icon">reveal<wbr>Range<wbr>AtTop</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#revealrangeincenter" class="tsd-kind-icon">reveal<wbr>Range<wbr>InCenter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#revealrangeincenterifoutsideviewport" class="tsd-kind-icon">reveal<wbr>Range<wbr>InCenter<wbr>IfOutside<wbr>Viewport</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#revealrangeneartop" class="tsd-kind-icon">reveal<wbr>Range<wbr>Near<wbr>Top</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#revealrangeneartopifoutsideviewport" class="tsd-kind-icon">reveal<wbr>Range<wbr>Near<wbr>Top<wbr>IfOutside<wbr>Viewport</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#saveviewstate" class="tsd-kind-icon">save<wbr>View<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#setmodel" class="tsd-kind-icon">set<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#setposition" class="tsd-kind-icon">set<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#setselection" class="tsd-kind-icon">set<wbr>Selection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#setselections" class="tsd-kind-icon">set<wbr>Selections</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#trigger" class="tsd-kind-icon">trigger</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="monaco.editor.ieditor.html#updateoptions" class="tsd-kind-icon">update<wbr>Options</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
