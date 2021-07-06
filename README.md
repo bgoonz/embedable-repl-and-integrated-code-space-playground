@@ -1,3 +1,123 @@
+
+Important Career Resources
+
+Previously recorded career lessons
+
+Search
+
+
+Topic Theme
+
+Lesson & Link
+
+Application Tracking Systems (ATS) & Interviewing
+
+Applicant Tracking Systems & Behavioral Interviewing
+
+Cold Outreach
+
+Cold Outreach w/ guest Michael Zimmerman from Lambda’s Solutions team
+
+Communication
+
+Follow-up Communications & Negotiating
+
+Cover Letters (updated)
+
+Cover letters
+
+Imposter Syndrome
+
+Imposter Syndrome
+
+Introvert Networking Tips
+
+Knowing Yourself: Introvert Networking Tips
+
+Job application and interview prep
+
+Job Description Breakdown
+
+Job Searching
+
+Job Searching During the Holidays
+
+Job Searching
+
+Job Search Strategy
+
+Job Searching / Sourcing
+
+Job Sourcing Locally
+
+Motivation
+
+Grit: Tips for persevering in the job search
+
+Negotiation
+
+Negotiation Preparation
+
+Negotiation
+
+Never Split the Difference
+
+Networking
+
+Networking Fundamentals
+
+Networking
+
+Networking before the holidays
+
+Networking planning
+
+Networking and cold out reach
+
+Networking: Informational Interviewing
+
+Networking & Informational Interviewing w/ guest Andrew Koerner from Tesla
+
+Networking: Internships, Freelance & Informational Interviews
+
+Networking and an informational interview with a small dev business owner
+
+On-boarding
+
+On-boarding to a new job w/ Chief People Officer Mark Frein
+
+Professional Branding
+
+Professional Branding Workshop
+
+Public Profiles
+
+Public Profiles FAQ
+
+Recruiter perspective
+
+Recruiter Ask Me Anything (AMA)
+
+Resumes
+
+Video Resumes
+
+Self-Awareness
+
+Knowing Yourself
+
+Self-Awareness
+
+Developing Yourself During a Job Search
+
+Working Remotely
+
+Remote Employment
+
+Job Searching/Sourcing
+
+Souring Opportunities
+
 # Embedding in Plunker
 
 You can now embed plunks easily once you have saved them.
